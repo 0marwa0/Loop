@@ -33,31 +33,22 @@ function CommitmentSection() {
       <div className="compass-container">
         <img
           src={wheelIcon}
-          // className="wheel-icon"
-
           className={`image-container wheel-icon compass ${scrollDirection}`}
         />
       </div>
-      <section
-        // style={{ border: "1px solid teal", gap: "50px" }}
-
-        className=" commitment-text d-flex justify-content-center"
-      >
+      <section className=" commitment-text d-flex ">
         <img src={shipIcon} className="ship-icon" />
         <div>
           <div className="commitment-title">OUR COMMITMENT</div>
-          Our commitment is to provide you with a
-          <strong> yacht experience</strong> that transcends the ordinary.
+          <div>
+            Our commitment is to provide you with a
+            <strong> yacht experience</strong> that transcends the ordinary.
+          </div>
         </div>
       </section>
       <div className={`image-container yacht-side-icon ${scrollDirection}`}>
         <img src={yachtSidIcon} />
       </div>
-
-      {/* <img
-        src={yachtSidIcon}
-        className={`image-container yacht-side-icon ${scrollDirection}`}
-      /> */}
     </div>
   );
 }

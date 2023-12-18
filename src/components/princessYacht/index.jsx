@@ -8,7 +8,13 @@ function PrincessYacht() {
     <div className="princessYacht-container ">
       <div className="container">
         <div className="Yacht-layout">
-          <div>
+          <div
+            className="Yacht-title"
+            // style={{
+            //   border: "2px solid red",
+            //   height: "auto",
+            // }}
+          >
             <div>
               <img src={arrowDown} />
             </div>
@@ -25,7 +31,12 @@ function PrincessYacht() {
             <div>
               <img
                 src={princessYachtImage}
-                style={{ width: "100%", height: "100%", zIndex: 2 }}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  zIndex: 2,
+                  left: "40px",
+                }}
                 className="Yacht-img"
               />
             </div>

@@ -15,6 +15,7 @@ import PrincessYacht from "./components/princessYacht";
 // fix the rsponsivens of the second section
 // use awl carsual
 // add class for bold words in all the site
+// replace contaner style with 142px
 function App() {
   const [count, setCount] = useState(0);
 

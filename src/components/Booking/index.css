@@ -79,9 +79,7 @@
 }
 .book-now {
   font-size: 25px;
-  /* height: 2px; */
-  /* height: 112px;
-  width: 301px; */
+
   padding: 16px 48px;
   border: none;
   justify-content: center;
@@ -90,9 +88,7 @@
 }
 .booking-values section {
   color: #131825;
-  /* padding: 24px; */
-  /* width: 284px;*/
-  /* height: 110px; */
+
   margin: 1px 0 1px 1px;
   padding: 24px 22px 22px 24px;
   border: solid 1px #eaeaea;
@@ -117,7 +113,7 @@
   /* width: 1440px; */
   height: 809px;
   color: #fff;
-
+  /* overflow: hidden; */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -160,6 +156,13 @@
   }
   .booking-values {
     grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .hearo-area {
+    height: 700px;
+    border: 2px solid rebeccapurple;
   }
 }
 @media screen and (max-width: 900px) {
