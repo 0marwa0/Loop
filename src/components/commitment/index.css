@@ -21,17 +21,17 @@
 }
 .compass-container {
   height: 100%;
-  width: 9.5%;
+  width: 15.5%;
   position: relative;
 }
 .wheel-icon {
   /* top: 0; */
-  top: 150px;
-  left: -280px;
+  top: 120px;
+  left: -320px;
   position: absolute;
-  rotate: 360deg;
-  width: 570px;
-  height: 540px;
+  /* rotate: 360deg;
+  width: 740px; */
+  height: 670px;
 }
 .ship-icon {
   width: 78px;

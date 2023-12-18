@@ -5,12 +5,13 @@
   font-family: Poppins;
   font-size: 58px !important;
   font-weight: 300;
-
+  padding-top: 20px;
   line-height: 0.79;
   letter-spacing: 2.9px;
   text-align: left;
   color: #fff;
 }
+
 .Yact-text {
   width: 414px;
   height: 36px;
@@ -25,23 +26,26 @@
   text-align: left;
   color: #fff;
 }
-.princessYacht-container {
-  background-image: url("../../assets/images/princessYacht-bg.png");
-  height: 591px;
-
-  height: 1280px;
-  width: 100%;
-  color: #fff;
+.Yacht-layout {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+
+  grid-template-columns: max-content 4fr;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
+.princessYacht-container {
+  padding-top: 98px;
+  background-image: url("../../assets/images/princessYacht-bg.png");
+  height: 591px;
+  width: 100%;
+  color: #fff;
+  margin-bottom: 100px;
+}
 .Yacht-doc {
   width: 764px;
   height: 96px;
-  margin: 0 0 109px 392px;
+  margin-bottom: 48px;
   font-family: Poppins;
   font-size: 16px;
   font-weight: 300;
@@ -50,10 +54,38 @@
   text-align: left;
   color: #fff;
 }
+
 .Yacht-img {
   width: 764px;
   height: 453px;
-  margin: 242px 142px 48px 264px;
   object-fit: contain;
   background-color: #1a2030;
+}
+@media screen and (max-width: 1400px) {
+  .princessYacht-container {
+    height: 80%;
+    padding-top: 200px;
+  }
+  .Yacht-doc {
+    width: 100%;
+  }
+
+  .Yacht-img,
+  .Yacht-name,
+  .Yact-text {
+    width: 100%;
+  }
+  .Yacht-name {
+    font-size: 1.5rem !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .Yacht-layout {
+    row-gap: 40px;
+    grid-template-columns: 1fr;
+  }
+  .Yacht-doc {
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+  }
 }

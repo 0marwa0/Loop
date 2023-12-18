@@ -33,6 +33,9 @@ body {
   width: 41px;
   height: 26px;
 }
+.container {
+  /* padding: 0 6px !important; */
+}
 @media screen and (max-width: 600px) {
   .section-text {
     font-size: 1.8rem !important;

@@ -14,12 +14,7 @@ import LoopFeatures from "./components/LoopFeatures";
 import PrincessYacht from "./components/princessYacht";
 // fix the rsponsivens of the second section
 // use awl carsual
-// code the last part
-// fix reponsivens of pagkes
-// add movment to the second part
 // add class for bold words in all the site
-// border of booking eare is not the same
-// fix loop featuers in 1376px
 function App() {
   const [count, setCount] = useState(0);
 
@@ -30,7 +25,7 @@ function App() {
       <PrimeLocation />
       <LoopPackages />
       <LoopFeatures />
-      {/* <PrincessYacht /> */}
+      <PrincessYacht />
       {/* <MultiCarousel /> */}
       <Testimonials />
       <Explore />

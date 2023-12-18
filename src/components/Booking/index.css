@@ -45,10 +45,12 @@
   display: grid;
   width: auto !important;
   border-radius: 4px;
-  padding: 20px;
+  /* padding: 20px; */
   height: max-content;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  overflow: hidden;
+  box-shadow: 0 24px 52px -14px rgba(29, 41, 57, 0.16);
+  border: solid 16px rgba(255, 255, 255, 0.06);
+  background-color: transparent;
   grid-template-rows: auto auto;
 }
 .booking-head {
