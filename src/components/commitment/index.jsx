@@ -30,10 +30,18 @@ function CommitmentSection() {
   }, [scrollPosition]);
   return (
     <div className="commitment-section">
-      {/* <img src={wheelIcon} className="wheel-icon" /> */}
-      {/* <section
-        style={{ border: "1px solid teal" }}
-        className="gap-3 commitment-text d-flex justify-content-center"
+      <div className="compass-container">
+        <img
+          src={wheelIcon}
+          // className="wheel-icon"
+
+          className={`image-container wheel-icon compass ${scrollDirection}`}
+        />
+      </div>
+      <section
+        // style={{ border: "1px solid teal", gap: "50px" }}
+
+        className=" commitment-text d-flex justify-content-center"
       >
         <img src={shipIcon} className="ship-icon" />
         <div>
@@ -42,9 +50,9 @@ function CommitmentSection() {
           <strong> yacht experience</strong> that transcends the ordinary.
         </div>
       </section>
-      <div className={`yacht-side-icon `}>
+      <div className={`image-container yacht-side-icon ${scrollDirection}`}>
         <img src={yachtSidIcon} />
-      </div> */}
+      </div>
 
       {/* <img
         src={yachtSidIcon}

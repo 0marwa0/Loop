@@ -3,20 +3,35 @@
   --grean: #38983c;
 }
 .commitment-section {
+  padding-top: 60px;
   background-image: url("../../assets/images/commitment-area.svg");
   width: 100%;
-  height: 600px;
+  height: 460px;
   color: #fff;
   overflow: hidden;
-  display: grid;
+  display: flex;
+  flex-direction: row;
   /* border: 1px solid red; */
-  /* grid-template-rows: 9fr 1fr; */
-  grid-template-columns: 50% 50%;
+  /* grid-template-columns: auto 100% 1fr; */
   align-items: end;
   place-items: center;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+.compass-container {
+  height: 100%;
+  width: 9.5%;
+  position: relative;
+}
+.wheel-icon {
+  /* top: 0; */
+  top: 150px;
+  left: -280px;
+  position: absolute;
+  rotate: 360deg;
+  width: 570px;
+  height: 540px;
 }
 .ship-icon {
   width: 78px;
@@ -24,6 +39,7 @@
 }
 .commitment-title {
   width: 414px;
+  margin-top: 60px;
   height: 36px;
   flex-grow: 0;
   font-family: Poppins;
@@ -39,26 +55,27 @@
 }
 
 .image-container.down {
-  transform: translateX(100px);
-}
-
-.image-container.up {
   transform: translateX(-100px);
 }
 
-.wheel-icon {
-  /* width: 620px;
-  height: 230px; */
-  margin-top: 90px;
-  rotate: 360deg;
+.image-container.up {
+  transform: translateX(100px);
+}
+
+.compass.down {
+  transform: rotate(80deg);
+}
+
+.compass.up {
+  transform: rotate(0deg);
 }
 .yacht-side-icon {
-  /* width: 614px;
-  height: 386px; */
+  width: 614px;
+  height: 386px;
   /* grid-row: 2; */
-  border: 2px solid green;
-
-  /* transform: rotate(2deg); */
+  /* border: 2px solid green; */
+  /* margin-right: 40px; */
+  /* transform: rotate(45deg); */
 }
 .empty-cell {
   grid-row: 1;
@@ -68,37 +85,45 @@
   padding: 0 9.25rem;
 }
 .commitment-text {
-  width: 654px;
+  width: 754px;
   /* height: 100%; */
-  height: 238px;
-  flex-grow: 0;
+  /* height: 238px; */
+  margin-bottom: 90px;
+  gap: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: Poppins;
-  font-size: 32px;
+  font-size: 34px;
   font-weight: 300;
   line-height: 1.44;
   letter-spacing: 1.6px;
   text-align: left;
   color: #131825;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1500px) {
   .commitment-section {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px auto;
+    /* border: 1px solid red; */
+    /* place-items: start; */
   }
-  .commitment-text,
-  .yacht-side-icon,
+  .commitment-text {
+    grid-row: 3;
+  }
   .wheel-icon {
-    grid-row: auto;
+    order: 1;
+    top: 580px;
+    left: -300px;
+    grid-row: 3;
+  }
+  .yacht-side-icon {
+    grid-row: 1;
   }
 }
 @media screen and (max-width: 800px) {
-  .commitment-section {
-    grid-template-columns: auto;
-    align-items: center;
-  }
   .commitment-text {
     font-size: 0.8rem !important;
     width: 100%;

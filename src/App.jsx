@@ -30,7 +30,7 @@ function App() {
       <PrimeLocation />
       <LoopPackages />
       <LoopFeatures />
-      <PrincessYacht />
+      {/* <PrincessYacht /> */}
       {/* <MultiCarousel /> */}
       <Testimonials />
       <Explore />
