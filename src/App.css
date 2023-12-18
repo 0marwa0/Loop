@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --dark-color: #131825;
+  --grean: #38983c;
+}
+.green-bg {
+  background-color: var(--grean) !important;
+}
+body {
+  font-family: Poppins !important;
+}
+.white-border {
+  border: 1px solid white !important;
+}
+.white-color {
+  color: white !important;
+}
+.section-text {
+  color: var(--dark-color);
+  width: 584px;
+  height: 138px;
+  padding-top: 60px 0;
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1.44;
+  letter-spacing: 1.6px;
+}
+.arrow-icon-ms {
+  width: 41px;
+  height: 26px;
+}
+@media screen and (max-width: 600px) {
+  .section-text {
+    font-size: 1.8rem !important;
+    width: 100%;
+    height: auto;
+  }
+}

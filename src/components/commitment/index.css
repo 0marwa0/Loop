@@ -1,0 +1,110 @@
+:root {
+  --dark-color: #131825;
+  --grean: #38983c;
+}
+.commitment-section {
+  background-image: url("../../assets/images/commitment-area.svg");
+  width: 100%;
+  height: 600px;
+  color: #fff;
+  overflow: hidden;
+  display: grid;
+  /* border: 1px solid red; */
+  /* grid-template-rows: 9fr 1fr; */
+  grid-template-columns: 50% 50%;
+  align-items: end;
+  place-items: center;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.ship-icon {
+  width: 78px;
+  height: 116px;
+}
+.commitment-title {
+  width: 414px;
+  height: 36px;
+  flex-grow: 0;
+  font-family: Poppins;
+  font-size: 20px;
+  line-height: 1.8;
+  letter-spacing: 4px;
+  text-align: left;
+  color: #131825;
+}
+
+.image-container {
+  transition: transform 0.9s ease-out;
+}
+
+.image-container.down {
+  transform: translateX(100px);
+}
+
+.image-container.up {
+  transform: translateX(-100px);
+}
+
+.wheel-icon {
+  /* width: 620px;
+  height: 230px; */
+  margin-top: 90px;
+  rotate: 360deg;
+}
+.yacht-side-icon {
+  /* width: 614px;
+  height: 386px; */
+  /* grid-row: 2; */
+  border: 2px solid green;
+
+  /* transform: rotate(2deg); */
+}
+.empty-cell {
+  grid-row: 1;
+  grid-column: span 3;
+}
+.container-main {
+  padding: 0 9.25rem;
+}
+.commitment-text {
+  width: 654px;
+  /* height: 100%; */
+  height: 238px;
+  flex-grow: 0;
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1.44;
+  letter-spacing: 1.6px;
+  text-align: left;
+  color: #131825;
+}
+@media screen and (max-width: 1200px) {
+  .commitment-section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .commitment-text,
+  .yacht-side-icon,
+  .wheel-icon {
+    grid-row: auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  .commitment-section {
+    grid-template-columns: auto;
+    align-items: center;
+  }
+  .commitment-text {
+    font-size: 0.8rem !important;
+    width: 100%;
+    padding: 0 10px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 700px) {
+}

@@ -1,0 +1,55 @@
+:root {
+  --dark-color: #131825;
+  --grean: #38983c;
+}
+.section-title {
+  width: 414px;
+  height: 36px;
+  flex-grow: 0;
+  font-family: Poppins;
+  font-size: 20px;
+  text-transform: capitalize !important;
+  line-height: 1.8;
+  letter-spacing: 4px;
+  margin-bottom: 18px;
+  text-align: left;
+  color: #fff;
+}
+.location-section {
+  background-image: url("../../assets/images/loopLocation.png");
+  width: 100%;
+  height: 933px;
+  color: #fff;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+}
+.location-section section {
+  padding-top: 124px;
+}
+.text-top {
+  position: absolute;
+  top: 20%;
+}
+.play-icon-container {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border-radius: 50%;
+}
+.play-icon {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  left: 11px;
+  height: 27px;
+  cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+  .location-content {
+    flex-direction: column;
+  }
+}

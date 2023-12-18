@@ -1,0 +1,115 @@
+.slide-item {
+  width: 470px;
+  height: 390px;
+  margin: 0 24px !important;
+  background-color: #1a2030;
+}
+.slider-btns {
+  position: absolute;
+  top: 0px;
+  background-color: blue;
+  /* gap: 20px; */
+}
+.slide-item img {
+  width: 100%;
+  height: 100%;
+}
+/* .carouselItem {
+  padding-right: 40px !important;
+} */
+.slider-btn-container {
+}
+.react-multi-carousel-item {
+  margin: 0 20px !important;
+}
+.react-multiple-carousel__arrow {
+  background-color: transparent !important;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 48px 264px 48px 16px;
+  padding: 16px;
+  border: solid 1px #131825;
+  border-radius: 50% !important;
+  cursor: pointer;
+}
+
+.react-multiple-carousel__arrow--left {
+  border-radius: 3px 0 0 3px;
+  top: -140px;
+  left: 200px;
+  margin-left: 20px !important;
+}
+.carousel-container {
+  overflow: visible !important;
+}
+
+.react-multiple-carousel__arrow--right {
+  border-radius: 0 3px 3px 0;
+  left: 300px;
+  margin-left: 20px;
+  top: -140px;
+}
+
+.react-multiple-carousel__arrow::before,
+.react-multiple-carousel__arrow::after {
+  display: none;
+}
+/* .slide-item {
+  overflow: visible;
+}
+
+.disable {
+  opacity: 0.5;
+  cursor: not-allowed;
+} */
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 5px 5px 20px 7px rgba(168, 168, 168, 1);
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 1s ease;
+}
+
+.carousel-slot {
+  flex: 1 0 100%;
+  flex-basis: 80%;
+  margin-right: 20px;
+}
+
+.slide-button-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.slide-button {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  padding: 10px;
+  background-color: #f66f3e;
+  border: 1px solid white;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.slide-button:active {
+  position: relative;
+  top: 1px;
+}
+
+.slide-button:focus {
+  outline: 0;
+}

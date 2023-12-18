@@ -1,0 +1,59 @@
+.Yacht-name {
+  width: 500px;
+  height: 46px;
+  flex-grow: 0;
+  font-family: Poppins;
+  font-size: 58px !important;
+  font-weight: 300;
+
+  line-height: 0.79;
+  letter-spacing: 2.9px;
+  text-align: left;
+  color: #fff;
+}
+.Yact-text {
+  width: 414px;
+  height: 36px;
+  flex-grow: 0;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: 4px;
+  text-align: left;
+  color: #fff;
+}
+.princessYacht-container {
+  background-image: url("../../assets/images/princessYacht-bg.png");
+  height: 591px;
+
+  height: 1280px;
+  width: 100%;
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.Yacht-doc {
+  width: 764px;
+  height: 96px;
+  margin: 0 0 109px 392px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+.Yacht-img {
+  width: 764px;
+  height: 453px;
+  margin: 242px 142px 48px 264px;
+  object-fit: contain;
+  background-color: #1a2030;
+}

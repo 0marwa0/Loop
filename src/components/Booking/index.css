@@ -1,0 +1,191 @@
+:root {
+  --dark-color: #131825;
+  --grean: #38983c;
+}
+
+.arrow-icon-lg {
+  width: 24px;
+  height: 24px;
+}
+.menu-icon {
+  width: 28px;
+  height: 18px;
+}
+.p-8 {
+  padding: 8px 0;
+}
+.font-20 {
+  font-size: 20px !important;
+}
+.logo-icon {
+  width: 124px;
+  height: 34px;
+}
+.text-18 {
+  font-family: Poppins;
+  font-size: 18px !important;
+  font-weight: 500;
+}
+.navbar-v2 {
+  padding-top: 70px;
+}
+
+.reviews-btn {
+  font-size: 18px !important;
+  padding: 16px 48px !important;
+  /* margin-top: 3.4rem; */
+}
+.text-16 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 300;
+}
+.hearo-booking {
+  margin-top: 100px;
+  display: grid;
+  width: auto !important;
+  border-radius: 4px;
+  padding: 20px;
+  height: max-content;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  grid-template-rows: auto auto;
+}
+.booking-head {
+  padding: 24px;
+  display: grid;
+  column-gap: 23px;
+  grid-template-columns: max-content max-content repeat(2, 1fr);
+
+  background-color: var(--dark-color);
+}
+.hearo-text {
+  width: 620px;
+  height: 290px;
+  line-height: 1.5;
+  letter-spacing: 2.4px;
+  font-weight: 300;
+  font-size: 48px;
+  display: flex;
+  margin-top: 100px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.gray-color {
+  color: #131825;
+}
+.book-now {
+  font-size: 25px;
+  /* height: 2px; */
+  /* height: 112px;
+  width: 301px; */
+  padding: 16px 48px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins;
+}
+.booking-values section {
+  color: #131825;
+  /* padding: 24px; */
+  /* width: 284px;*/
+  /* height: 110px; */
+  margin: 1px 0 1px 1px;
+  padding: 24px 22px 22px 24px;
+  border: solid 1px #eaeaea;
+  border-right: none;
+}
+
+.booking-values {
+  display: grid;
+  grid-template-columns: max-content max-content 1fr 1fr;
+  background-color: white;
+}
+.green-bg {
+  background-color: var(--grean) !important;
+}
+.btn {
+  border-radius: 0 !important;
+}
+.hearo-area {
+  background-image: url("../../assets/images/hearo-area.png");
+
+  width: 100%;
+  /* width: 1440px; */
+  height: 809px;
+  color: #fff;
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.date-icon {
+  background-color: #38983c;
+}
+.date-text {
+  /* width: 71px; */
+  height: 32px;
+  flex-grow: 0;
+  font-family: Poppins !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #131825;
+}
+@media screen and (max-width: 1040px) {
+  .book-now {
+    font-size: 19px;
+    padding: 20px;
+  }
+  .hearo-area {
+    height: 100%;
+  }
+  .reviews-btn {
+    font-size: 17px !important;
+    padding: 10px;
+    margin-top: 1.2rem;
+  }
+  .hearo-booking {
+    grid-template-columns: 1fr 1fr;
+  }
+  .booking-head {
+    grid-template-columns: auto;
+  }
+  .booking-values {
+    grid-template-columns: auto;
+  }
+}
+@media screen and (max-width: 900px) {
+  /* .container-main {
+    padding: 0 10px;
+  } */
+  .hearo-text {
+    font-size: 1.8rem;
+    height: auto;
+  }
+  .booking-values {
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .book-loop-text-v2,
+  .book-loop-title-v2,
+  .book-loop-btn,
+  /* .testimonal-head, */
+  .hearo-text {
+    font-size: 1.2rem !important;
+    width: 100%;
+    height: auto;
+  }
+  .book-loop-title-v2 {
+    padding-top: 0.9rem;
+  }
+  .hearo-booking {
+    grid-template-columns: 1fr;
+  }
+}

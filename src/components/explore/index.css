@@ -1,0 +1,81 @@
+.book-loop-text {
+  width: 743px;
+  height: 190px;
+  font-size: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1.44;
+  letter-spacing: 1.6px;
+  text-align: left;
+  color: #fff;
+}
+.book-loop-title {
+  padding-top: 142px;
+  font-size: 26px;
+  display: flex;
+  font-family: Poppins;
+  font-size: 27px;
+  font-weight: 300;
+  line-height: 1.44;
+  letter-spacing: 0.8px;
+  margin-bottom: 20px;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+.arrow-icon-lg {
+  width: 41px;
+  height: 36px;
+}
+.book-loop-btn {
+  width: max-content !important;
+  /* height: 32px !important; */
+  font-family: Poppins;
+  display: flex;
+  gap: 3px;
+  flex-direction: row;
+  font-size: 2.2rem !important;
+  letter-spacing: 0.8px !important;
+  text-align: left !important;
+  color: #fff;
+  padding: 19px !important;
+  border: 1px solid white !important;
+}
+.explore-boat {
+  margin-top: 98px;
+  background-image: url("../../assets/images/explore_boat.png");
+
+  height: 1280px;
+  width: 100%;
+  color: #fff;
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 800px) {
+  .book-loop-text,
+  .book-loop-title,
+  .book-loop-btn,
+  .section-text {
+    font-size: 1.2rem !important;
+    width: 100%;
+    margin-bottom: 20px;
+    height: auto;
+  }
+
+  .explore-boat {
+    margin-top: 10px;
+  }
+
+  .book-loop-title-v2 {
+    padding-top: 0.9rem;
+  }
+}
