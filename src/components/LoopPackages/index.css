@@ -65,6 +65,8 @@
   height: 424px;
   /* object-fit: cover; */
   padding: 0 24px;
+  flex: 0 1 369px;
+  box-sizing: border-box;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -88,11 +90,9 @@
 /* card  */
 .packages-cards-container {
   margin-bottom: 90px;
-  /* display: flex;
+  display: flex;
   flex-direction: row;
-  flex-wrap: wrap; */
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(369px, 1fr));
+  flex-wrap: wrap;
 
   gap: 40px;
 }
@@ -209,5 +209,10 @@
   .loop-packages-btn {
     width: auto;
     padding: 16px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .package-card {
+    flex: 0 1 100%;
   }
 }
