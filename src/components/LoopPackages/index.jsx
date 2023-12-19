@@ -1,8 +1,31 @@
 import React from "react";
 import "./index.css";
+import { useState, useEffect } from "react";
 import arrowIcon from "../../assets/icons/arrow-btn.svg";
 
 function LoopPackages() {
+  const [scrollDirection, setScrollDirection] = useState("up");
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentPosition = window.scrollY;
+
+      if (currentPosition > scrollPosition) {
+        setScrollDirection("down");
+      } else {
+        setScrollDirection("up");
+      }
+
+      setScrollPosition(currentPosition);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrollPosition]);
   return (
     <div>
       <div className="loop-packages">
@@ -18,7 +41,9 @@ function LoopPackages() {
       </div>
       <div className="container">
         <div className="packages-cards-container">
-          <div className="package-card day-card">
+          <div
+            className={`package-card day-card day-card-move ${scrollDirection}`}
+          >
             <div className="empty-div"> </div>
             <div>
               <div className="card-title">FULL DAY</div>
@@ -33,7 +58,9 @@ function LoopPackages() {
               <img src={arrowIcon} alt="" className="arrow-icon-ms" />
             </button>
           </div>
-          <div className="package-card week-card">
+          <div
+            className={`package-card week-card week-card-move ${scrollDirection}`}
+          >
             <div className="empty-div"> </div>
             <div>
               <div className="card-title">FULL WEEK</div>
@@ -47,7 +74,9 @@ function LoopPackages() {
               <img src={arrowIcon} alt="" className="arrow-icon-ms" />
             </button>
           </div>
-          <div className="package-card month-card">
+          <div
+            className={`package-card month-card month-card-move ${scrollDirection}`}
+          >
             <div className="empty-div"> </div>
             <div>
               <div className="card-title">FULL MONTH</div>

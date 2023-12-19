@@ -54,6 +54,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 99% auto;
   color: #fff;
+
   /* padding: 20px; */
   /* place-items: center; */
 }
@@ -61,32 +62,39 @@
   height: 60%;
 }
 .package-card {
-  width: 369px;
   height: 424px;
-  object-fit: cover;
+  /* object-fit: cover; */
   padding: 0 24px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 40em) {
+  .package-card {
+    flex: 0 1 calc(100% - 1em);
+  }
+}
 
 .month-card {
   background-image: url("../../assets/images/full-month.png");
 }
-.day-card {
+.day-card-move {
   background-image: url("../../assets/images/full-day.png");
 }
-.week-card {
+.week-card-move {
   background-image: url("../../assets/images/full-week.png");
 }
 
 /* card  */
 .packages-cards-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 20px;
   margin-bottom: 90px;
-  place-items: start;
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(369px, 1fr));
+
+  gap: 40px;
 }
 .card-text {
   font-family: Poppins;
@@ -108,10 +116,44 @@
   letter-spacing: 1.6px;
 }
 
+.day-card-move {
+  transition: transform 0.9999s ease-out;
+}
+
+.day-card-move.down {
+  transform: translateY(-80px);
+}
+
+.day-card-move.up {
+  transform: translateY(80px);
+}
+
+.week-card-move {
+  transition: transform 0.9999s ease-out;
+}
+
+.week-card-move.down {
+  transform: translateY(-60px);
+}
+
+.month-card-move.up {
+  transform: translateY(60px);
+}
+.month-card-move {
+  transition: transform 0.9999s ease-out;
+}
+
+.month-card-move.down {
+  transform: translateY(-20px);
+}
+
+.week-card-move.up {
+  transform: translateY(20px);
+}
+
 @media screen and (max-width: 1200px) {
   .packages-cards-container {
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 20px;
+    justify-content: center;
     align-items: center;
   }
   .loop-packages-text {
@@ -119,11 +161,11 @@
   }
 }
 @media screen and (max-width: 800px) {
-  .packages-cards-container {
+  /* .packages-cards-container {
     grid-template-columns: 1fr;
     row-gap: 20px;
     place-items: center;
-  }
+  } */
   .loop-packages-content {
     top: 80%;
   }
