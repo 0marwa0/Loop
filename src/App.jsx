@@ -26,8 +26,8 @@ function App() {
       <LoopPackages />
       <LoopFeatures />
       <PrincessYacht />
-      <MultiCarousel />
-      {/* <Testimonials /> */}
+      {/* <MultiCarousel /> */}
+      <Testimonials />
       <Explore />
       <Footer />
     </>
