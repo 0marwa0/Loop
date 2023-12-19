@@ -2,63 +2,123 @@
   --dark-color: #131825;
   --grean: #38983c;
 }
+/** raido input  style start **/
 
-.arrow-icon-lg {
-  width: 24px;
-  height: 24px;
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 40px;
+  width: 205px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  /* line-height: 3.11; */
+  letter-spacing: 0.9px;
+  text-align: left;
+  color: #fff;
+  cursor: pointer;
+  /*line-height: 20px;
+  display: inline-block;
+  color: #666; */
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 26px;
+  height: 26px;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  background: transparent;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background: var(--grean);
+  position: absolute;
+  top: 13px;
+  left: 9px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+[type="radio"]:checked + label::before {
+  border: 2px solid var(--grean);
+}
+/** raido input  style end**/
+.date-price {
+  /* width: 235px; */
+  height: auto;
+  margin-left: 40px;
+  font-family: Poppins !important;
+  font-size: 16px;
+  font-weight: 300 !important;
+  /* line-height: 2.25; */
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: #fff !important;
 }
 .menu-icon {
   width: 28px;
   height: 18px;
 }
-.p-8 {
-  padding: 8px 0;
-}
-.font-20 {
-  font-size: 20px !important;
-}
 .logo-icon {
   width: 124px;
   height: 34px;
 }
-.text-18 {
-  font-family: Poppins;
-  font-size: 18px !important;
-  font-weight: 500;
-}
+
 .navbar-v2 {
-  padding-top: 70px;
+  padding-top: 40px;
 }
 
 .reviews-btn {
+  width: 201px;
   font-size: 18px !important;
   padding: 16px 48px !important;
   /* margin-top: 3.4rem; */
 }
-.text-16 {
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 300;
-}
+
 .hearo-booking {
-  margin-top: 100px;
+  margin-top: -135px;
   display: grid;
-  width: auto !important;
-  border-radius: 4px;
-  /* padding: 20px; */
+  z-index: 1;
+  width: max-content !important;
+  /* width: max-content; */
   height: max-content;
   overflow: hidden;
   box-shadow: 0 24px 52px -14px rgba(29, 41, 57, 0.16);
   border: solid 16px rgba(255, 255, 255, 0.06);
   background-color: transparent;
+  transform: scale(1.02);
   grid-template-rows: auto auto;
 }
 .booking-head {
-  padding: 24px;
-  display: grid;
-  column-gap: 23px;
-  grid-template-columns: max-content max-content repeat(2, 1fr);
+  padding: 24px 176px 21px 24px;
 
+  display: grid;
+  /* height: 93px; */
+  /* height: 100%; */
+  column-gap: 48px;
+  grid-template-columns: repeat(2, max-content) 1fr;
   background-color: var(--dark-color);
 }
 .hearo-text {
@@ -77,61 +137,72 @@
 .gray-color {
   color: #131825;
 }
-.book-now {
-  font-size: 25px;
-
-  padding: 16px 48px;
-  border: none;
+.head-btn {
+  width: 331px !important;
+  height: 64px;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-size: 16px !important;
+  gap: 10px;
+  border: none;
+  padding: 16px 48px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #38983c;
+  color: #fff;
+}
+.book-now {
+  width: 301px !important;
+  height: 112px !important;
   font-family: Poppins;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #fff;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 48px;
 }
 .booking-values section {
   color: #131825;
-
   margin: 1px 0 1px 1px;
   padding: 24px 22px 22px 24px;
   border: solid 1px #eaeaea;
   border-right: none;
+  width: 100%;
 }
 
 .booking-values {
   display: grid;
-  grid-template-columns: max-content max-content 1fr 1fr;
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: repeat(4, 284px);
+  /* grid-template-columns: repeat(4, auto); */
   background-color: white;
 }
-.green-bg {
-  background-color: var(--grean) !important;
-}
-.btn {
-  border-radius: 0 !important;
-}
+
 .hearo-area {
   background-image: url("../../assets/images/hearo-area.png");
-
-  width: 100%;
   /* width: 1440px; */
-  height: 809px;
+  height: 729px;
   color: #fff;
   /* overflow: hidden; */
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
 }
-.date-icon {
-  background-color: #38983c;
-}
+
 .date-text {
-  /* width: 71px; */
   height: 32px;
-  flex-grow: 0;
   font-family: Poppins !important;
   font-size: 16px !important;
   font-weight: 500 !important;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 2;
-  letter-spacing: normal;
   text-align: left;
   color: #131825;
 }
@@ -143,13 +214,20 @@
   .hearo-area {
     height: 100%;
   }
-  .reviews-btn {
-    font-size: 17px !important;
-    padding: 10px;
+  .reviews-btn,
+  .head-btn {
+    /* font-size: 17px !important; */
+    padding: 0.3rem !important;
     margin-top: 1.2rem;
+    height: auto;
+    width: max-content !important;
+    /* flex-direction: column; */
   }
   .hearo-booking {
     grid-template-columns: 1fr 1fr;
+  }
+  .date-price {
+    margin-bottom: 8px;
   }
   .booking-head {
     grid-template-columns: auto;
@@ -159,16 +237,26 @@
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1300px) {
   .hearo-area {
     height: 700px;
-    border: 2px solid rebeccapurple;
+  }
+  .hearo-booking {
+    width: auto !important;
+  }
+  .book-now {
+    grid-column: 1/1;
+
+    width: 100% !important;
+  }
+  .booking-values {
+    /* grid-template-columns: repeat(4, auto); */
+
+    place-items: center;
   }
 }
+
 @media screen and (max-width: 900px) {
-  /* .container-main {
-    padding: 0 10px;
-  } */
   .hearo-text {
     font-size: 1.8rem;
     height: auto;
@@ -176,12 +264,15 @@
   .booking-values {
     padding: 5px;
   }
+  .book-now {
+    padding: 5px !important;
+  }
 }
+
 @media screen and (max-width: 600px) {
   .book-loop-text-v2,
   .book-loop-title-v2,
   .book-loop-btn,
-  /* .testimonal-head, */
   .hearo-text {
     font-size: 1.2rem !important;
     width: 100%;
@@ -192,5 +283,21 @@
   }
   .hearo-booking {
     grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 300px) {
+  .date-price {
+    font-size: 0.6rem;
+    width: auto !important;
+  }
+  .hearo-booking {
+    box-shadow: none;
+    border: none;
+  }
+  .date-title {
+    font-size: 0.9rem;
+  }
+  .book-now {
+    flex-direction: column;
   }
 }

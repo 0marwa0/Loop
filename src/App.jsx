@@ -12,6 +12,7 @@ import MultiCarousel from "./components/slider";
 import LoopPackages from "./components/LoopPackages";
 import LoopFeatures from "./components/LoopFeatures";
 import PrincessYacht from "./components/princessYacht";
+import BookingUI from "./components/Booking/BookingUi";
 // fix the rsponsivens of the second section
 // use awl carsual
 // add class for bold words in all the site
@@ -27,8 +28,8 @@ function App() {
       <LoopPackages />
       <LoopFeatures />
       <PrincessYacht />
-      {/* <MultiCarousel /> */}
-      <Testimonials />
+      <MultiCarousel />
+      {/* <Testimonials /> */}
       <Explore />
       <Footer />
     </>

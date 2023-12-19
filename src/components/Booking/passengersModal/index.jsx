@@ -10,7 +10,7 @@ function PassengersModal({ show, handleClose }) {
     return `${value}i`;
   }
   return (
-    <div className="commitment-section">
+    <div>
       <Modal show={show} onHide={handleClose} centered>
         <Modal.Header closeButton>
           <Modal.Title className="passenger-modal-title">
