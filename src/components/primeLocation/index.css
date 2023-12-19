@@ -48,8 +48,22 @@
   height: 27px;
   cursor: pointer;
 }
+.primeLocation-move {
+  transition: transform 0.9999s ease-out;
+}
+
+.primeLocation-move.down {
+  transform: translateY(-80px);
+}
+
+.primeLocation-move.up {
+  transform: translateY(80px);
+}
 @media screen and (max-width: 800px) {
   .location-content {
     flex-direction: column;
+  }
+  .location-section {
+    height: 600px;
   }
 }

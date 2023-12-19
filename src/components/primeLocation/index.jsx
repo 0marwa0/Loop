@@ -1,12 +1,36 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./index.css";
 import playIcon from "../../assets/icons/play-icon.svg";
 
 function PrimeLocation() {
+  const [scrollDirection, setScrollDirection] = useState("up");
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentPosition = window.scrollY;
+
+      if (currentPosition > scrollPosition) {
+        setScrollDirection("down");
+      } else {
+        setScrollDirection("up");
+      }
+
+      setScrollPosition(currentPosition);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrollPosition]);
   return (
     <div className="location-section">
       <div className="container">
-        <section className="d-flex gap-4 location-content">
+        <section
+          className={`primeLocation-move d-flex gap-4 location-content ${scrollDirection}`}
+        >
           <div className="play-icon-container">
             <img src={playIcon} className="play-icon" />
           </div>
