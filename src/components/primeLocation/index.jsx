@@ -27,7 +27,7 @@ function PrimeLocation() {
   }, [scrollPosition]);
   return (
     <div className="location-section">
-      <div className="container">
+      <div className="container-layout">
         <section
           className={`primeLocation-move d-flex gap-4 location-content ${scrollDirection}`}
         >

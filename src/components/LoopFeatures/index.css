@@ -15,7 +15,7 @@
   text-align: left;
   color: #fff;
   /* border: 1px solid teal; */
-  margin-bottom: 40px !important;
+  /* margin-bottom: 40px !important; */
 }
 .loop-features-title {
   padding-top: 144px;
@@ -62,15 +62,16 @@
   grid-template-columns: 1fr;
   grid-template-rows: 79% 31%;
   height: 1280px;
+  position: relative;
 }
 .features-container {
   display: flex;
   flex-direction: row;
   gap: 40px;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 
-  /* justify-content: center;*/
-  /* align-items: center; */
+  justify-content: center;
+  align-items: center;
 }
 .feature-text {
   width: 352px;
@@ -97,33 +98,63 @@
   text-align: left;
   color: #fff;
 }
+.featuers-content {
+  position: absolute;
+  top: 1000px;
+}
 
 @media screen and (max-width: 1000px) {
-  .feature-title {
+  /* .feature-title {
     font-size: 1.3rem;
   }
   .feature-text {
     font-size: 0.9rem;
     width: 300px;
-  }
-  .features-container {
+  } */
+  /* .features-container {
     gap: 10%;
-  }
-  .features-container {
+  } */
+  /* .features-container {
     padding-bottom: 10px;
-  }
+  } */
 }
 
 @media screen and (max-width: 1200px) {
   .features-container {
     padding: 10px;
     width: 100%;
-    justify-content: start;
-    overflow: hidden;
-    height: auto;
-    padding-bottom: 5px;
+    gap: 30px;
+    position: unset;
+
+    top: 0;
   }
+  .background-small-screen {
+    background-color: rgba(22, 31, 57, 0.667);
+  }
+  .loop-features-btn {
+    margin-bottom: 30px;
+  }
+  .loop-featuers {
+    height: 100%;
+  }
+  .featuers-content {
+    position: unset;
+    top: 0;
+  }
+  .feature-text,
   .feature-title {
+    color: black;
+    text-align: center;
+    width: auto;
+    height: auto;
+  }
+  .feature-text {
+    font-size: 1.1rem;
+  }
+  /* .feature-card {
+    text-align: center ;
+  } */
+  /* .feature-title {
     font-size: 1rem;
     width: 100%;
 
@@ -133,13 +164,18 @@
     font-size: 0.7rem;
     width: 100%;
     height: auto;
-  }
+  } */
+}
+.test {
+  position: absolute;
+  top: 1000px;
 }
 @media screen and (max-width: 800px) {
   .loop-featuers {
     grid-template-rows: max-content auto;
     place-items: end;
-    height: auto;
+    height: 100%;
+    position: unset;
   }
 
   .loop-features-title {
@@ -154,15 +190,13 @@
     margin-bottom: 60px;
     height: auto;
   }
-
+  /* .loop-features-title {
+    padding-top: 0.9rem;
+  } */
   .loop-features-btn {
     font-size: 0.8rem !important;
     width: max-content !important;
     padding: 5px !important;
     height: auto !important;
-  }
-
-  .loop-features-title {
-    padding-top: 0.9rem;
   }
 }

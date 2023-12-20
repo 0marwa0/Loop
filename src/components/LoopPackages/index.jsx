@@ -29,7 +29,7 @@ function LoopPackages() {
   return (
     <div>
       <div className="loop-packages">
-        <div className="container">
+        <div className="container-layout">
           <div className="loop-packages-content">
             <div className="loop-packages-title">loop packages</div>
             <div className="loop-packages-text">
@@ -39,7 +39,7 @@ function LoopPackages() {
           </div>
         </div>
       </div>
-      <div className="container">
+      <div className="container-layout">
         <div className="packages-cards-container">
           <div
             className={`package-card day-card day-card-move ${scrollDirection}`}
