@@ -179,9 +179,9 @@
   }
 
   .loop-features-btn {
-    font-size: 0.8rem !important;
+    /* font-size: 0.8rem !important; */
     width: max-content !important;
-    padding: 5px !important;
+    /* padding: 10px !important; */
     height: auto !important;
   }
 }
