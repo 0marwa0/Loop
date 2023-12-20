@@ -48,13 +48,14 @@
 .testimonal-cards {
   display: grid;
   width: 100%;
-
-  padding: 40px 0;
+  /* background-color: red; */
+  padding: 60px 0;
   column-gap: 40px;
   align-items: center;
   justify-content: center;
   justify-items: center;
   height: 100%;
+
   grid-template-columns: repeat(5, 1fr);
   flex-wrap: wrap;
   overflow: hidden;
@@ -162,7 +163,7 @@
 }
 
 .card1-move.down {
-  transform: translateY(-50px);
+  transform: translateY(-70px);
 }
 
 .card1-move.up {

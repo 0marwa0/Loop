@@ -1,9 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./index.css";
 import arrowIcon from "../../assets/icons/arrow-btn.svg";
 import test from "../../assets/images/loop-featuers.png";
 import features from "./text";
 function LoopFeatures() {
+  const [scrollDirection, setScrollDirection] = useState("up");
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentPosition = window.scrollY;
+
+      if (currentPosition > scrollPosition) {
+        setScrollDirection("down");
+      } else {
+        setScrollDirection("up");
+      }
+
+      setScrollPosition(currentPosition);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrollPosition]);
   return (
     <div>
       <div className="loop-featuers">
@@ -25,7 +47,9 @@ function LoopFeatures() {
           </div>
         </div>
         <img src={test} className="bg-loop-feature" />
-        <div className=" features-container container-layout">
+        <div
+          className={` ${scrollDirection} features-container container-layout feature-move`}
+        >
           {features.map((feature) => (
             <div className="feature-card">
               <div className="feature-title">{feature.title}</div>

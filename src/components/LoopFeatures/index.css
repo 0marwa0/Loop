@@ -183,3 +183,15 @@
     height: auto !important; */
   }
 }
+
+.feature-move {
+  transition: transform 0.9999s ease-out;
+}
+
+.feature-move.down {
+  transform: translateY(-80px);
+}
+
+.feature-move.up {
+  transform: translateY(80px);
+}
