@@ -11,7 +11,7 @@ function Testimonials() {
         <div className="testimonal-container">
           <div className="text-center testimonals">Testimonials</div>
           <div className="text-center">
-            <div className="testimonal-head container">
+            <div className="testimonal-head ">
               The satisfaction of our clients is at the heart of everything we
               do
             </div>

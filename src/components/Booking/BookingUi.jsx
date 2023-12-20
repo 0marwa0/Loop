@@ -46,8 +46,9 @@ function BookingUI() {
             </div>
           </section>
           <button class=" d-flex gap-3 text-white green-bg book-now ">
-            BOOK NOW
-            <img src={arrowIcon} className="arrow-icon-lg" />
+            <div>BOOK NOW</div>
+
+            <img src={arrowIcon} className="arrow-icon-lg book-now-icon" />
           </button>
         </div>
       </div>

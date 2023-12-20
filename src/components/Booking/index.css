@@ -189,7 +189,7 @@
 .hearo-area {
   background-image: url("../../assets/images/hearo-area.png");
   /* width: 1440px; */
-  height: 489px;
+  height: 689px;
   color: #fff;
   /* overflow: hidden; */
   background-size: cover;
@@ -229,10 +229,11 @@
   .date-price {
     margin-bottom: 8px;
   }
-  .booking-head {
+
+  .booking-values {
     grid-template-columns: auto;
   }
-  .booking-values {
+  .booking-head {
     grid-template-columns: auto;
   }
 }
@@ -281,6 +282,7 @@
   .book-loop-title-v2 {
     padding-top: 0.9rem;
   }
+
   .hearo-booking {
     grid-template-columns: 1fr;
   }

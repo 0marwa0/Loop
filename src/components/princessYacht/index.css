@@ -1,5 +1,6 @@
 .Yacht-name {
-  width: 500px;
+  /* width: 500px; */
+
   height: 46px;
   flex-grow: 0;
   font-family: Poppins;
@@ -9,10 +10,17 @@
   line-height: 0.79;
   letter-spacing: 2.9px;
   text-align: left;
+
   color: #fff;
 }
 
-.Yact-text {
+.Yacht-title {
+  position: relative;
+}
+.Yacht-icon {
+  margin-bottom: 89px;
+}
+.Yacht-text {
   width: 414px;
   height: 36px;
   flex-grow: 0;
@@ -29,9 +37,8 @@
 .Yacht-layout {
   display: grid;
   gap: 10px;
-  grid-template-columns: max-content 4fr;
-  background-size: cover;
-  background-position: center center;
+  grid-template-columns: max-content 5fr;
+
   background-repeat: no-repeat;
 }
 .princessYacht-container {
@@ -40,6 +47,9 @@
   height: 591px;
   width: 100%;
   color: #fff;
+  background-size: contain;
+  background-position: center center;
+  background-position: center center;
   margin-bottom: 100px;
 }
 .Yacht-doc {
@@ -52,27 +62,44 @@
   line-height: 2;
   letter-spacing: normal;
   text-align: left;
+  z-index: 2;
   color: #fff;
 }
 
 .Yacht-img {
   width: 764px;
-  height: 453px;
+
   object-fit: contain;
   background-color: #1a2030;
 }
+.Yacht-absolute {
+  position: absolute;
+  left: -120px;
+}
+.Yacht-relative {
+  position: relative;
+}
 @media screen and (max-width: 1400px) {
   .princessYacht-container {
-    height: 80%;
-    padding-top: 200px;
+    height: 100%;
+    padding-top: 20px;
+  }
+  .Yacht-absolute {
+    position: unset;
+  }
+
+  .Yacht-relative {
+    position: unset;
   }
   .Yacht-doc {
     width: 100%;
   }
-
+  .Yacht-icon {
+    margin-bottom: 30px;
+  }
   .Yacht-img,
   .Yacht-name,
-  .Yact-text {
+  .Yacht-text {
     width: 100%;
   }
   .Yacht-name {
@@ -89,8 +116,9 @@
     margin-bottom: 40px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .Yacht-doc {
     font-size: 0.7rem;
+    height: 100%;
   }
 }

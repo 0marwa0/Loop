@@ -13,7 +13,6 @@ import LoopPackages from "./components/LoopPackages";
 import LoopFeatures from "./components/LoopFeatures";
 import PrincessYacht from "./components/princessYacht";
 import BookingUI from "./components/Booking/BookingUi";
-// add class for bold words in all the site
 function App() {
   const [count, setCount] = useState(0);
 

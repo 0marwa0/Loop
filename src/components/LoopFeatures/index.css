@@ -115,6 +115,9 @@
   .features-container {
     gap: 10px;
   }
+  .loop-features-btn {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (max-width: 1200px) {
   .features-container {
@@ -129,9 +132,6 @@
     display: block;
   }
 
-  .loop-features-btn {
-    margin-bottom: 30px;
-  }
   .loop-featuers {
     background-image: none;
     height: 100%;
@@ -179,9 +179,7 @@
   }
 
   .loop-features-btn {
-    /* font-size: 0.8rem !important; */
-    width: max-content !important;
-    /* padding: 10px !important; */
-    height: auto !important;
+    /* width: max-content !important;
+    height: auto !important; */
   }
 }
