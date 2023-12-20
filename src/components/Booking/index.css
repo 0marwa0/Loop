@@ -153,8 +153,8 @@
   color: #fff;
 }
 .book-now {
-  width: 301px !important;
-  height: 112px !important;
+  /* width: 301px !important; */
+  /* height: 112px !important; */
   font-family: Poppins;
   font-size: 20px;
   line-height: 1.6;

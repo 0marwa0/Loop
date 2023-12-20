@@ -31,41 +31,43 @@ function TestimonalCard(props) {
         class={` ${scrollDirection} card-move card${props.number}-move card-move  testimonal-card`}
       >
         <div>
-          <div class="d-flex gap-2 align-items-center">
+          <div class="d-flex align-items-center gap15">
             <img class="testimonal-user-img" src={userImage} alt="" />
             <div class="d-flex flex-column">
-              <div className="text-18"> Jessicc</div>
-              <div class="testimonal-stars">
-                <img
-                  class="testimonal-user-img"
-                  className="star-icon"
-                  src={starIcon}
-                  alt=""
-                />
-                <img
-                  class="testimonal-user-img"
-                  className="star-icon"
-                  src={starIcon}
-                  alt=""
-                />
-                <img
-                  class="testimonal-user-img"
-                  className="star-icon"
-                  src={starIcon}
-                  alt=""
-                />
-                <img
-                  class="testimonal-user-img"
-                  className="star-icon"
-                  src={starIcon}
-                  alt=""
-                />
-                <img
-                  class="testimonal-user-img"
-                  className="star-icon"
-                  src={starIcon}
-                  alt=""
-                />
+              <div>
+                <div className="font-18"> Jessicc</div>
+                <div class="testimonal-stars">
+                  <img
+                    class="testimonal-user-img"
+                    className="star-icon"
+                    src={starIcon}
+                    alt=""
+                  />
+                  <img
+                    class="testimonal-user-img"
+                    className="star-icon"
+                    src={starIcon}
+                    alt=""
+                  />
+                  <img
+                    class="testimonal-user-img"
+                    className="star-icon"
+                    src={starIcon}
+                    alt=""
+                  />
+                  <img
+                    class="testimonal-user-img"
+                    className="star-icon"
+                    src={starIcon}
+                    alt=""
+                  />
+                  <img
+                    class="testimonal-user-img"
+                    className="star-icon"
+                    src={starIcon}
+                    alt=""
+                  />
+                </div>{" "}
               </div>
             </div>
           </div>
