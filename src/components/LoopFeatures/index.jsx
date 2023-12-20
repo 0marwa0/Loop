@@ -8,8 +8,8 @@ function LoopFeatures() {
     <div>
       <div className="loop-featuers">
         <div className="container-layout">
-          <div className="loop-features-title">Why Choose LOOP</div>
-          <div className="loop-features-text background-small-screen">
+          <div className="loop-features-title ">Why Choose LOOP</div>
+          <div className="loop-features-text d-flex gap-3">
             LOOP redefines yachting with unmatched services. Discover why
             travelers choose us.
           </div>
@@ -24,7 +24,8 @@ function LoopFeatures() {
             </button>
           </div>
         </div>
-        <div className="featuers-content features-container container-layout">
+        <img src={test} className="bg-loop-feature" />
+        <div className=" features-container container-layout">
           {features.map((feature) => (
             <div className="feature-card">
               <div className="feature-title">{feature.title}</div>
