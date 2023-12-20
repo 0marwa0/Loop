@@ -20,7 +20,6 @@
   font-size: 26px;
   display: flex;
   font-family: Poppins;
-  font-size: 27px;
   font-weight: 300;
   line-height: 1.44;
   letter-spacing: 0.8px;
@@ -58,7 +57,18 @@
   background-position: center center;
   background-repeat: no-repeat;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
+  .explore-boat {
+    height: 400px;
+  }
+  .book-loop-title {
+    padding-top: 10px;
+    font-size: 22px;
+  }
+
+  .book-loop-btn {
+    font-size: 1.2rem !important;
+  }
 }
 @media screen and (max-width: 800px) {
   .book-loop-text,
@@ -74,7 +84,9 @@
   .explore-boat {
     margin-top: 10px;
   }
-
+  .book-loop-btn {
+    background-color: rgba(30, 29, 29, 0.454) !important;
+  }
   .book-loop-title-v2 {
     padding-top: 0.9rem;
   }
