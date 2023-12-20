@@ -10,8 +10,10 @@
   padding: 0 142px;
 }
 .arrow-icon-lg {
-  width: 24px;
-  height: 24px;
+  /* width: 24px;
+  height: 24px; */
+  width: 21px;
+  height: 12px;
   margin-right: 3px;
 }
 .p-8 {

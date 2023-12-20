@@ -4,6 +4,16 @@
 .reviews-btn {
   font-size: 18px !important;
   padding: 16px 48px !important;
+  width: 321px;
+  height: 64px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 48px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 .testimonal-container {
   display: flex;
@@ -44,6 +54,7 @@
   align-items: center;
   justify-content: center;
   justify-items: center;
+  height: 100%;
   grid-template-columns: repeat(5, 1fr);
   flex-wrap: wrap;
   overflow: hidden;
@@ -142,4 +153,46 @@
   /* .testimonal-head {
     padding: 5px;
   } */
+}
+
+/*anmation */
+
+.card-move {
+  transition: transform 0.9999s ease-out;
+}
+
+.card1-move.down {
+  transform: translateY(-50px);
+}
+
+.card1-move.up {
+  transform: translateY(50px);
+}
+.card2-move.down {
+  transform: translateY(-40px);
+}
+
+.card2-move.up {
+  transform: translateY(40px);
+}
+.card3-move.down {
+  transform: translateY(-30px);
+}
+
+.card3-move.up {
+  transform: translateY(30px);
+}
+.card4-move.down {
+  transform: translateY(-20px);
+}
+
+.card4-move.up {
+  transform: translateY(20px);
+}
+.card5-move.down {
+  transform: translateY(-10px);
+}
+
+.card5-move.up {
+  transform: translateY(10px);
 }

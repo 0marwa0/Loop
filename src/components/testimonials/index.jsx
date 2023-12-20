@@ -17,11 +17,11 @@ function Testimonials() {
             </div>
           </div>
           <div className="testimonal-cards text-center">
-            <TestimonalCard isBlure={true} />
-            <TestimonalCard />
-            <TestimonalCard />
-            <TestimonalCard />
-            <TestimonalCard isBlure={true} />
+            <TestimonalCard isBlure={true} number={1} />
+            <TestimonalCard number={2} />
+            <TestimonalCard number={1} />
+            <TestimonalCard number={1} />
+            <TestimonalCard isBlure={true} number={1} />
           </div>
 
           <div>
