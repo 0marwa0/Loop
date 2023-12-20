@@ -152,12 +152,14 @@
   background-color: #38983c;
   color: #fff;
 }
-.book-now {
+.book-now-btn {
   /* width: 301px !important; */
   /* height: 112px !important; */
   font-family: Poppins;
   font-size: 20px;
   line-height: 1.6;
+  height: 100%;
+  width: 100%;
   letter-spacing: 1px;
   text-align: left;
   color: #fff;
@@ -177,11 +179,14 @@
   border-right: none;
   width: 100%;
 }
-
+.text-padding {
+  padding-bottom: 5px;
+}
 .booking-values {
   display: grid;
   /* grid-template-columns: repeat(4, 1fr); */
   grid-template-columns: repeat(4, 284px);
+  place-items: center;
   /* grid-template-columns: repeat(4, auto); */
   background-color: white;
 }
@@ -245,7 +250,7 @@
   .hearo-booking {
     width: auto !important;
   }
-  .book-now {
+  .book-now-btn {
     grid-column: 1/1;
 
     width: 100% !important;
@@ -265,7 +270,11 @@
   .booking-values {
     padding: 5px;
   }
-  .book-now {
+
+  .booking-values section {
+    border-left: none;
+  }
+  .book-now-btn {
     padding: 5px !important;
   }
 }
@@ -273,7 +282,7 @@
 @media screen and (max-width: 600px) {
   .book-loop-text-v2,
   .book-loop-title-v2,
-  .book-loop-btn,
+  .book-loop-btn-btn,
   .hearo-text {
     font-size: 1.2rem !important;
     width: 100%;
@@ -282,7 +291,9 @@
   .book-loop-title-v2 {
     padding-top: 0.9rem;
   }
-
+  .book-now-btn {
+    padding: 2px;
+  }
   .hearo-booking {
     grid-template-columns: 1fr;
   }
@@ -299,7 +310,7 @@
   .date-title {
     font-size: 0.9rem;
   }
-  .book-now {
+  .book-now-btn {
     flex-direction: column;
   }
 }

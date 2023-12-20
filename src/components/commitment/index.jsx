@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 import "./index.css";
 import shipIcon from "../../assets/icons/ship-icon.svg";
-import wheelIcon from "../../assets/icons/compass.svg";
+import compassIcon from "../../assets/icons/compass.svg";
 import yachtSidIcon from "../../assets/images/yacht.png";
-import { MotionAnimate } from "react-motion-animate";
 import BookingUI from "../Booking/BookingUi";
 
 function CommitmentSection() {
@@ -37,11 +36,11 @@ function CommitmentSection() {
       <div className="commitment-section">
         <div className="compass-container">
           <img
-            src={wheelIcon}
+            src={compassIcon}
             className={`image-container compass-icon compass ${scrollDirection}`}
           />
         </div>
-        <div className=" commitment-container ">
+        <div className="commitment-container ">
           <img src={shipIcon} className="ship-icon" />
           <div>
             <div className="commitment-title">OUR COMMITMENT</div>

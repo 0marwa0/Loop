@@ -40,12 +40,12 @@ function BookingUI() {
           </section>
           <section onClick={handleShow}>
             <div class="font-18"> Passengers</div>
-            <div class="gray-color p-8 font-18 d-flex justify-content-between font-20">
+            <div class="gray-color text-padding font-18 d-flex justify-content-between font-20">
               10 Passengers
               <img src={dropDownIcon} className="drop-down-icon" />
             </div>
           </section>
-          <button class=" d-flex gap-3 text-white green-bg book-now ">
+          <button class=" text-white green-bg book-now-btn ">
             <div>BOOK NOW</div>
 
             <img src={arrowIcon} className="arrow-icon-lg book-now-icon" />
