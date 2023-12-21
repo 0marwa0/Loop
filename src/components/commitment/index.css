@@ -25,7 +25,8 @@
 }
 .compass-container {
   height: 300px;
-  width: 150px;
+  width: 210px;
+  /* background-color: #38983c; */
   position: relative;
 }
 .compass {
@@ -98,6 +99,8 @@
   padding: 0 9.25rem;
 }
 .commitment-container {
+  width: 584px;
+
   gap: 50px;
   display: flex;
   justify-content: center;
@@ -128,15 +131,6 @@
   }
 }
 
-@media screen and (max-width: 800px) {
-  .yacht-side-icon {
-    width: 50%;
-  }
-
-  .ship-icon {
-    height: 90px;
-  }
-}
 @media screen and (max-width: 600px) {
   .commitment-container {
     flex-direction: column;
@@ -144,7 +138,9 @@
 }
 @media screen and (max-width: 1220px) {
   .commitment-container {
-    margin: 0 20px;
+    padding: 0 20px;
+    margin: 50px 0;
+    width: 100%;
   }
   .yacht-side-icon {
     display: none;
