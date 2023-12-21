@@ -101,7 +101,8 @@
   margin-top: -135px;
   display: grid;
   z-index: 1;
-  width: auto !important;
+  /* width: auto !important; */
+  width: max-content !important;
   height: max-content;
   overflow: hidden;
   box-shadow: 0 24px 52px -14px rgba(29, 41, 57, 0.16);

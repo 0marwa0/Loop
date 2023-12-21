@@ -124,7 +124,7 @@
     height: auto;
   }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1400px) {
   .testimonal-cards {
     /* grid-template-columns: repeat(2, 1fr);
     justify-content: center;

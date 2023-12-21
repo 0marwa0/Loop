@@ -51,7 +51,7 @@
 
 @media screen and (min-width: 1000px) {
   .primeLocation-move {
-    transition: transform 0.9999s ease-out;
+    transition: transform 1.9998s ease-out;
   }
 
   .primeLocation-move.down {
