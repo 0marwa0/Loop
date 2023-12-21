@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "./index.css";
 import shipIcon from "../../assets/icons/ship-icon.svg";
 import compassIcon from "../../assets/icons/compass.svg";
-import yachtSidIcon from "../../assets/images/yacht.png";
+import yachtSidIcon from "../../assets/images/Yacht-booking-section.png";
 import BookingUI from "../Booking/BookingUi";
 
 function CommitmentSection() {
@@ -34,12 +34,14 @@ function CommitmentSection() {
         <BookingUI />{" "}
       </div>
       <div className="commitment-section">
+        {/* compass */}
         <div className="compass-container">
           <img
             src={compassIcon}
             className={`image-container compass-icon compass ${scrollDirection}`}
           />
         </div>
+        {/* text */}
         <div className="commitment-container ">
           <img src={shipIcon} className="ship-icon" />
           <div>
@@ -50,6 +52,7 @@ function CommitmentSection() {
             </div>
           </div>
         </div>
+        {/* Yacht */}
         <div className={`image-container yacht-side-icon ${scrollDirection}`}>
           <img src={yachtSidIcon} />
         </div>

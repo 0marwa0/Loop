@@ -18,7 +18,7 @@
   width: 100%;
   height: 474px;
   display: grid;
-  grid-template-columns: auto repeat(2, 1fr);
+  grid-template-columns: auto 1fr auto;
   color: #fff;
   overflow-wrap: break-word;
   overflow: hidden;
@@ -27,6 +27,9 @@
   height: 300px;
   width: 150px;
   position: relative;
+}
+.compass {
+  transition: transform 1.9998s ease-out;
 }
 .compass-icon {
   top: 220px;
@@ -39,7 +42,8 @@
   margin-top: -10px;
 }
 .commitment-title {
-  width: 414px;
+  width: 584px;
+
   margin-top: 60px;
   margin-bottom: 30px;
   height: 36px;
@@ -52,17 +56,30 @@
   color: #131825;
 }
 
+.yacht-side-icon {
+  width: 614px;
+  height: 386px;
+
+  /* object-fit: contain;
+  transform: rotate(-180deg); */
+  /* border: 1px solid red; */
+}
+.yacht-side-icon img {
+  width: 100%;
+  height: 100%;
+}
+
 @media screen and (min-width: 1000px) {
   .image-container {
-    transition: transform 0.999s ease-out;
+    transition: transform 1.9998s ease-out;
   }
 
   .image-container.down {
-    transform: translateX(-100px);
+    transform: translateX(30px);
   }
 
   .image-container.up {
-    transform: translateX(100px);
+    transform: translateX(-30px);
   }
 
   .compass.down {
@@ -126,6 +143,9 @@
   }
 }
 @media screen and (max-width: 1220px) {
+  .commitment-container {
+    margin: 0 20px;
+  }
   .yacht-side-icon {
     display: none;
   }
