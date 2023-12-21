@@ -1,6 +1,8 @@
 .loop-packages {
   background-image: url("../../assets/images/loop-packages.png");
-  height: 680px;
+  /* height: 680px; */
+  min-height: 680px;
+  height: 100%;
   width: 100%;
   color: #fff;
   background-size: cover;
@@ -68,6 +70,7 @@
   flex: 0 1 369px;
   box-sizing: border-box;
   background-size: cover;
+  transition: transform 1.9998s ease-out;
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -93,8 +96,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
-  gap: 40px;
+  gap: 24px;
 }
 .card-text {
   font-family: Poppins;
@@ -116,41 +118,42 @@
   letter-spacing: 1.6px;
 }
 
-.day-card-move {
-  transition: transform 0.9999s ease-out;
-}
+@media screen and (min-width: 1000px) {
+  .day-card-move {
+    transition: transform 0.9999s ease-out;
+  }
 
-.day-card-move.down {
-  transform: translateY(-80px);
-}
+  .day-card-move.down {
+    transform: translateY(-20px);
+  }
 
-.day-card-move.up {
-  transform: translateY(80px);
-}
+  .day-card-move.up {
+    transform: translateY(20px);
+  }
 
-.week-card-move {
-  transition: transform 0.9999s ease-out;
-}
+  .week-card-move {
+    transition: transform 0.9999s ease-out;
+  }
 
-.week-card-move.down {
-  transform: translateY(-60px);
-}
+  .week-card-move.down {
+    transform: translateY(-50px);
+  }
 
-.month-card-move.up {
-  transform: translateY(60px);
-}
-.month-card-move {
-  transition: transform 0.9999s ease-out;
-}
+  .month-card-move.up {
+    transform: translateY(40px);
+  }
+  /* .month-card-move {
+    transition: transform 0.99s ease-out;
+  } */
 
-.month-card-move.down {
-  transform: translateY(-20px);
-}
+  .month-card-move.down {
+    transform: translateY(-70px);
+  }
 
-.week-card-move.up {
-  transform: translateY(20px);
+  .week-card-move.up {
+    transform: translateY(40px);
+  }
 }
-
 @media screen and (max-width: 1200px) {
   .packages-cards-container {
     justify-content: center;

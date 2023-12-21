@@ -40,8 +40,8 @@ function PrimeLocation() {
               className="section-text 
           white-color"
             >
-              <strong>Dubai</strong> and<strong>Abu Dhabi</strong> offer some of
-              the world's most iconic and breathtaking maritime landscapes.
+              <strong>Dubai</strong> And<strong> Abu Dhabi</strong> offer some
+              of the world's most iconic and breathtaking maritime landscapes.
             </div>
           </div>
         </section>

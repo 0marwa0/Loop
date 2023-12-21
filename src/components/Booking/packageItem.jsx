@@ -6,7 +6,6 @@ function PackageItem({ title, text, id }) {
     { name: "month", checked: false },
     { name: "week", checked: false },
   ]);
-  const handlechange = () => {};
   return (
     <div>
       <div

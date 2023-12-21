@@ -11,11 +11,23 @@ function Footer() {
       <section id="footer">
         <div className="container footer-layout">
           <div class="footer-icons">
-            <img src={facebookIcon} className="footer-icon" />
-            <img src={twiterIcon} className="footer-icon" />
-            <img src={instgramIcon} className="footer-icon" />
-            <img src={youtypeIcon} className="footer-icon" />
-            <img src={linkedinIcon} className="footer-icon" />
+            <a href="#">
+              <img src={facebookIcon} className="footer-icon" />
+            </a>
+
+            <a href="#">
+              {" "}
+              <img src={twiterIcon} className="footer-icon" />
+            </a>
+            <a href="#">
+              <img src={instgramIcon} className="footer-icon" />
+            </a>
+            <a href="#">
+              <img src={youtypeIcon} className="footer-icon" />
+            </a>
+            <a href="#">
+              <img src={linkedinIcon} className="footer-icon" />
+            </a>
           </div>
           <div className="text-center">© LOOP 2023</div>
           <div className="terms-porlicy">

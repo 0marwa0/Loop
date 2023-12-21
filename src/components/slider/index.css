@@ -1,72 +1,28 @@
 .slide-item {
-  width: 470px;
-  height: 390px;
-  margin: 0 24px !important;
-  background-color: #1a2030;
+  width: 100%;
+  height: 100%;
+  /* margin: 0 24px !important; */
+}
+.slider-section {
+  /* margin-top: 48px; */
 }
 .slider-btns {
   position: absolute;
   top: 0px;
-  background-color: blue;
   /* gap: 20px; */
 }
 .slide-item img {
   width: 100%;
   height: 100%;
 }
-/* .carouselItem {
-  padding-right: 40px !important;
-} */
-.slider-btn-container {
+.splide__track {
+  padding-top: 48px;
+  padding-bottom: 98px;
 }
-.react-multi-carousel-item {
-  margin: 0 20px !important;
-}
-.react-multiple-carousel__arrow {
-  background-color: transparent !important;
-  width: 56px;
-  height: 56px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 10px;
-  margin: 48px 264px 48px 16px;
-  padding: 16px;
-  border: solid 1px #131825;
-  border-radius: 50% !important;
-  cursor: pointer;
+.splide {
+  padding: 0 !important;
 }
 
-.react-multiple-carousel__arrow--left {
-  border-radius: 3px 0 0 3px;
-  top: -140px;
-  left: 200px;
-  margin-left: 20px !important;
-}
-.carousel-container {
-  overflow: visible !important;
-}
-
-.react-multiple-carousel__arrow--right {
-  border-radius: 0 3px 3px 0;
-  left: 300px;
-  margin-left: 20px;
-  top: -140px;
-}
-
-.react-multiple-carousel__arrow::before,
-.react-multiple-carousel__arrow::after {
-  display: none;
-}
-/* .slide-item {
-  overflow: visible;
-}
-
-.disable {
-  opacity: 0.5;
-  cursor: not-allowed;
-} */
 .wrapper {
   width: 100%;
   overflow: hidden;
@@ -86,30 +42,31 @@
 
 .slide-button-container {
   display: flex;
-  justify-content: space-between;
-  padding-bottom: 10px;
+  justify-content: start;
+  gap: 16px;
+}
+.splide--slide {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.splide__slide {
+  margin-right: 16px !important;
 }
 
 .slide-button {
+  margin-bottom: 5px;
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 100;
   padding: 10px;
-  background-color: #f66f3e;
-  border: 1px solid white;
+  background-color: transparent;
+  width: max-content;
+  border-radius: 50px !important ;
+  border: 1px solid rgb(122, 115, 115);
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
-  margin-top: 20px;
   text-decoration: none;
-}
-
-.slide-button:active {
-  position: relative;
-  top: 1px;
-}
-
-.slide-button:focus {
-  outline: 0;
 }

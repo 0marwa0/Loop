@@ -52,24 +52,26 @@
   color: #131825;
 }
 
-.image-container {
-  transition: transform 0.999s ease-out;
-}
+@media screen and (min-width: 1000px) {
+  .image-container {
+    transition: transform 0.999s ease-out;
+  }
 
-.image-container.down {
-  transform: translateX(-100px);
-}
+  .image-container.down {
+    transform: translateX(-100px);
+  }
 
-.image-container.up {
-  transform: translateX(100px);
-}
+  .image-container.up {
+    transform: translateX(100px);
+  }
 
-.compass.down {
-  transform: rotate(80deg);
-}
+  .compass.down {
+    transform: rotate(80deg);
+  }
 
-.compass.up {
-  transform: rotate(0deg);
+  .compass.up {
+    transform: rotate(0deg);
+  }
 }
 .empty-cell {
   grid-row: 1;

@@ -1,7 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { ArrowProps } from "react-multi-carousel/lib/types";
-
+import React, { useRef, useEffect, useState } from "react";
 import arrowLfet from "../../assets/icons/icon-long-arrow-left.svg";
 import arrowRight from "../../assets/icons/icon-long-arrow-right.svg";
 import "./index.css";
@@ -9,96 +9,123 @@ import slide1 from "../../assets/slideImage/slide1.png";
 import slide2 from "../../assets/slideImage/slide2.png";
 import slide3 from "../../assets/slideImage/slide3.png";
 import slide4 from "../../assets/slideImage/slide4.png";
-function MultiCarousel() {
-  const responsive = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
-      items: 3,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 3,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  };
-  const ButtonGroup = ({ next, previous, ...rest }) => {
-    const {
-      carouselState: { currentSlide, totalItems, slidesToShow },
-    } = rest;
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+function MultiCarousel(props) {
+  const splideRef = useRef(null);
 
-    return (
-      <div>
-        <div className="carousel-button-group">
-          <button
-            aria-label="Go to previous slide"
-            className={
-              currentSlide === 0
-                ? "disable"
-                : " react-multiple-carousel__arrow react-multiple-carousel__arrow--left"
-            }
-            onClick={() => previous()}
-          >
-            <img src={arrowRight} />
-          </button>
-          <div
-            aria-label="Go to next slide"
-            className={
-              currentSlide === totalItems - slidesToShow
-                ? "disable"
-                : "react-multiple-carousel__arrow react-multiple-carousel__arrow--right slider-btn-container"
-            }
-            onClick={() => next()}
-          >
-            <img src={arrowLfet} />
-          </div>
-        </div>
-      </div>
-    );
-  };
+  useEffect(() => {
+    const splide = splideRef.current.splide;
+
+    const handlePrevClick = () => {
+      const currentSlide = splide.index;
+      if (currentSlide > 0) {
+        splide.go(currentSlide - 1);
+      }
+    };
+
+    const handleNextClick = () => {
+      const currentSlide = splide.index;
+      if (currentSlide < splide.length - 1) {
+        splide.go(currentSlide + 1);
+      }
+    };
+
+    document.getElementById("prev").addEventListener("click", handlePrevClick);
+    document.getElementById("next").addEventListener("click", handleNextClick);
+
+    return () => {
+      document
+        .getElementById("prev")
+        .removeEventListener("click", handlePrevClick);
+      document
+        .getElementById("next")
+        .removeEventListener("click", handleNextClick);
+    };
+  }, []);
 
   return (
     <div>
-      <Carousel
-        centerMode={true}
-        swipeable={true}
-        draggable={false}
-        enderButtonGroupOutside={true}
-        customButtonGroup={<ButtonGroup />}
-        arrows={false}
-        responsive={responsive}
+      <div className="container-layout">
+        <div className="slide-button-container ">
+          <button id="prev" className="slide-button ">
+            <img src={arrowLfet} />
+          </button>
+          <button id="next" className="slide-button ">
+            <img src={arrowLfet} />
+          </button>
+        </div>
+      </div>
+
+      <Splide
+        ref={splideRef}
+        options={{
+          rewind: true,
+          width: "100%",
+          perPage: 5,
+          // gap: "3rem",
+          pagination: false,
+          focus: 0,
+          perMove: 1,
+          // mediaQuery: "min",
+
+          breakpoints: {
+            1000: {
+              perPage: 5,
+            },
+            767: {
+              perPage: 2,
+            },
+            640: {
+              perPage: 1,
+            },
+          },
+          focus: "center",
+          gap: "0.2rem",
+        }}
       >
-        <div className="slide-item">
-          <img src={slide1} />
-        </div>
-        <div className="slide-item">
-          <img src={slide2} />
-        </div>
-        <div className="slide-item">
-          <img src={slide3} />
-        </div>
-        <div className="slide-item">
-          <img src={slide4} />
-        </div>
-        <div className="slide-item">
-          <img src={slide2} />
-        </div>
-        <div className="slide-item">
-          <img src={slide2} />
-        </div>
-        <div className="slide-item">
-          <img src={slide2} />
-        </div>
-        <div className="slide-item">
-          <img src={slide2} />
-        </div>
-      </Carousel>
+        <SplideSlide>
+          <img
+            src={slide2}
+            alt="Yacht image"
+            className={` ${props.scrollDirection} card-move card1-move card-move  slide-item`}
+          />
+        </SplideSlide>
+        <SplideSlide>
+          <img
+            src={slide3}
+            alt="Yacht image"
+            className={` ${props.scrollDirection} card-move card2-move card-move  slide-item`}
+          />
+        </SplideSlide>
+        <SplideSlide>
+          <img
+            src={slide4}
+            alt="Yacht image"
+            className={` ${props.scrollDirection} card-move card3-move card-move  slide-item`}
+          />
+        </SplideSlide>
+        <SplideSlide>
+          <img
+            src={slide3}
+            alt="Yacht image"
+            className={` ${props.scrollDirection} card-move card4-move card-move  slide-item`}
+          />
+        </SplideSlide>
+        <SplideSlide>
+          <img
+            src={slide4}
+            alt="Yacht image"
+            className={` ${props.scrollDirection} card-move card5-move card-move  slide-item`}
+          />
+        </SplideSlide>
+        <SplideSlide>
+          <img
+            src={slide2}
+            alt="Yacht image"
+            className={` ${props.scrollDirection} card-move card5-move card-move  slide-item`}
+          />
+        </SplideSlide>
+      </Splide>
     </div>
   );
 }

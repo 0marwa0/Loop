@@ -6,7 +6,7 @@ function Explore() {
   return (
     <>
       <div class="explore-boat">
-        <div className="container">
+        <div className="container-layout">
           <div class="book-loop-title">
             Explore our exclusive yacht services
           </div>
