@@ -45,7 +45,7 @@ function BookingUI() {
               <img src={dropDownIcon} className="drop-down-icon" />
             </div>
           </section>
-          <button class=" text-white green-bg book-now-btn ">
+          <button class=" text-white green-bg book-btn ">
             <div>BOOK NOW</div>
 
             <img src={arrowIcon} className="arrow-icon-lg book-now-icon" />

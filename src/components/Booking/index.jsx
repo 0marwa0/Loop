@@ -13,7 +13,7 @@ function Booking() {
           <div class="hearo-text">
             LUXURY YACHTING IN DUBAI & ABU Dhabi WITH LOOP.
           </div>
-          <button class="head-btn">
+          <button class="hearo-btn">
             EXPLORE OUR PACKAGES
             <img src={arrowIcon} />
           </button>

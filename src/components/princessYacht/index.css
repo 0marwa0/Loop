@@ -1,13 +1,13 @@
 .Yacht-name {
   /* width: 500px; */
 
-  height: 46px;
+  /* height: 46px; */
   flex-grow: 0;
   font-family: Poppins;
   font-size: 58px !important;
   font-weight: 300;
   padding-top: 20px;
-  line-height: 0.79;
+  line-height: 1;
   letter-spacing: 2.9px;
   text-align: left;
 

@@ -1,9 +1,8 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import DateIcon from "../../assets/icons/datePicker-icon";
-import InputAdornment from "@mui/material/InputAdornment";
 
 // const theme = createTheme({
 //   components: {
@@ -19,14 +18,27 @@ import InputAdornment from "@mui/material/InputAdornment";
 //   },
 // });
 function DateInput() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center",
+      }}
+    >
       {/* <ThemeProvider theme={theme}> */}
       <LocalizationProvider dateAdapter={AdapterDayjs}>
         <DatePicker
+          // ref={datePickerRef}
           slots={{
-            openPickerIcon: DateIcon,
+            openPickerButton: () => "",
           }}
+          open={open}
+          onOpen={() => setOpen(true)}
+          onClose={() => setOpen(false)}
           format="DD MMMM YYYY"
           views={["month", "year", "day"]}
           slotProps={{
@@ -35,13 +47,18 @@ function DateInput() {
                 size: "large",
                 readOnly: true,
                 color: "#131825",
-                sx: { fontSize: 20, maxWidth: 700, margin: 0 },
+                onClick: () => {
+                  setOpen(true);
+                },
+
+                sx: { fontSize: 20, maxWidth: 200, margin: 0 },
                 disableUnderline: true,
               },
               variant: "standard",
             },
           }}
         />
+        <DateIcon onClick={() => setOpen(true)} />
       </LocalizationProvider>
       {/* </ThemeProvider> */}
     </div>

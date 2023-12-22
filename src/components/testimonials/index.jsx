@@ -16,7 +16,7 @@ function Testimonials(props) {
           The satisfaction of our clients is at the heart of everything we do
         </div>
       </div>
-      <div className="testimonal-cards" style={{ display: "flex" }}>
+      <div className="testimonal-cards">
         <TestimonalCard
           isBlure={true}
           name="Jessicc"
@@ -52,7 +52,7 @@ function Testimonials(props) {
       </div>
 
       <div>
-        <button class="btn pramary-btn text-white dark_bg reviews-btn">
+        <button class="text-white dark_bg reviews-btn">
           VIEW ALL REVIEWS
           <img src={arrowIcon} className="arrow-icon-lg" />
         </button>

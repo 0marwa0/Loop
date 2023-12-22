@@ -160,9 +160,9 @@
   .features-container {
     gap: 40px;
   }
-  .feature-text {
+  /* .feature-text {
     font-size: 1.1rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 800px) {
@@ -173,7 +173,7 @@
   }
 
   .loop-features-title {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     width: max-content;
     height: auto;
   }

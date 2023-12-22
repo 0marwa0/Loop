@@ -44,6 +44,10 @@ body {
   line-height: 1.78;
   text-align: left;
 }
+a {
+  color: unset;
+  text-decoration: none;
+}
 .font-16 {
   font-family: Poppins;
   font-size: 16px;
@@ -65,6 +69,9 @@ body {
   font-weight: 300;
   line-height: 1.44;
   letter-spacing: 1.6px;
+}
+.pointer {
+  cursor: pointer;
 }
 .arrow-icon-ms {
   width: 41px;

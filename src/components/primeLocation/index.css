@@ -49,6 +49,18 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 300px) {
+  .location-section {
+    height: 100% !important;
+  }
+  .section-text {
+    margin-bottom: 10px;
+  }
+  .section-title {
+    width: auto;
+    line-height: 1;
+  }
+}
 @media screen and (min-width: 1000px) {
   .primeLocation-move {
     transition: transform 1.9998s ease-out;

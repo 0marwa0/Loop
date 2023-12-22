@@ -29,10 +29,16 @@ function Footer() {
               <img src={linkedinIcon} className="footer-icon" />
             </a>
           </div>
-          <div className="text-center">© LOOP 2023</div>
+          <div className="text-center">
+            <a href="#">© LOOP 2023</a>
+          </div>
           <div className="terms-porlicy">
-            <div className="text-center">Terms Of Use</div>
-            <div className="text-center">Privacy Policy</div>
+            <div className="text-center">
+              <a href="#"> Terms Of Use</a>
+            </div>
+            <div className="text-center">
+              <a href="#"> Privacy Policy</a>
+            </div>
           </div>
         </div>
       </section>
