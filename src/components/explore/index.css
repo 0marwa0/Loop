@@ -47,12 +47,13 @@
 }
 .explore-boat {
   margin-top: 98px;
-  background-image: url("../../assets/images/explore_boat.png");
+  background-image: url("../../assets/images/boat-1.png");
 
   height: 1280px;
   width: 100%;
   color: #fff;
-
+  background-color: #131825;
+  /* overflow: hidden; */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -97,7 +98,7 @@
     margin-top: 200px;
   }
   .explore-boats-section-move.down {
-    transform: scale(1.3);
+    transform: scale(1.1);
   }
 
   .explore-boats-section-move.up {

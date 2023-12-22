@@ -8,7 +8,7 @@ function PrincessYacht() {
     <div className="princessYacht-container ">
       <div className="container-layout">
         <div className="Yacht-layout">
-          <div className="Yacht-title" style={{ zIndex: "1", height: "100%" }}>
+          <div className="Yacht-title">
             <div>
               <img src={arrowDown} className="Yacht-icon" />
             </div>
@@ -16,21 +16,15 @@ function PrincessYacht() {
 
             <div className="Yacht-name">Princess F56 FLY</div>
           </div>
-          <div
-            //style={{ position: "relative" }}
-            className="Yacht-relative"
-          >
-            <div
-              // style={{ position: "absolute", left: "-120px" }}
-              className="Yacht-absolute"
-            >
+          <div className="Yacht-relative">
+            <div className="Yacht-absolute">
               <section className="Yacht-doc">
                 Meet the PRINCESS F56 FLY – the pinnacle of sea luxury. With
                 sleek design and top-notch amenities, this yacht offers an
                 unparalleled experience in opulence. Elevate your journey on the
                 seas with the epitome of yachting sophistication.
               </section>
-              <div>
+              <div className="Yacht-img-container">
                 <img src={princessYachtImage} className="Yacht-img" />
               </div>
             </div>

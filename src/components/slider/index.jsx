@@ -9,6 +9,7 @@ import slide1 from "../../assets/slideImage/slide1.png";
 import slide2 from "../../assets/slideImage/slide2.png";
 import slide3 from "../../assets/slideImage/slide3.png";
 import slide4 from "../../assets/slideImage/slide4.png";
+
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 function MultiCarousel(props) {
   const splideRef = useRef(null);
@@ -61,7 +62,7 @@ function MultiCarousel(props) {
         options={{
           rewind: true,
           width: "100%",
-          perPage: 5,
+          perPage: 4.5,
           // gap: "3rem",
           pagination: false,
           focus: 0,
@@ -70,7 +71,7 @@ function MultiCarousel(props) {
 
           breakpoints: {
             1000: {
-              perPage: 5,
+              perPage: 4,
             },
             767: {
               perPage: 2,

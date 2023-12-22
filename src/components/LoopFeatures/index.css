@@ -17,6 +17,12 @@
   /* border: 1px solid teal; */
   /* margin-bottom: 40px !important; */
 }
+.feature-card {
+  height: max-content;
+
+  margin: 0 !important;
+  padding: 0 !important;
+}
 .loop-features-title {
   padding-top: 144px;
 
@@ -35,6 +41,7 @@
   width: 41px;
   height: 36px;
 }
+
 .loop-features-btn {
   width: 273px;
   height: 64px !important;
@@ -60,6 +67,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   display: grid;
+  overflow: hidden;
   grid-template-columns: 1fr;
   grid-template-rows: 74% 28%;
   height: 1280px;
@@ -67,26 +75,31 @@
 .features-container {
   display: flex;
   flex-direction: row;
+  /* gap: 10%; */
   gap: 50px;
-
+  width: 100%;
+  height: max-content;
   flex-wrap: wrap;
-  justify-content: start;
+  justify-content: space-between;
   align-items: start;
 }
 .feature-text {
-  width: 352px;
+  /* width: 352px; */
+
+  /* width: max-content; */
   height: 128px;
-  flex-grow: 0;
   font-family: Poppins;
   font-size: 16px;
   font-weight: 300;
   line-height: 2;
   text-align: left;
   color: #fff;
+  flex-shrink: 1;
 }
 .feature-title {
   margin-bottom: 30px;
   height: 32px;
+  width: max-content;
   align-self: stretch;
   flex-grow: 0;
   font-family: Poppins;
@@ -104,12 +117,15 @@
   width: 100%;
   height: 100%;
 }
-
+.feature-card {
+  width: 30%;
+}
 @media screen and (max-width: 1400px) {
   .feature-text {
     width: auto;
     height: auto;
   }
+
   .loop-featuers {
     grid-template-rows: 60% 40%;
   }
@@ -125,14 +141,18 @@
     padding: 10px;
     width: 100%;
     gap: 10px;
-
-    height: auto;
-    top: 0;
+    justify-content: center;
+    align-items: center;
+    position: unset;
+    /* height: auto; */
+    /* top: 0; */
   }
   .bg-loop-feature {
     display: block;
   }
-
+  .feature-card {
+    width: 352px;
+  }
   .loop-featuers {
     background-image: none;
     height: 100%;
@@ -191,16 +211,27 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   .feature-move {
     transition: transform 1.9998s ease-out;
-  }
-
-  .feature-move.down {
-    transform: translateY(-80px);
   }
 
   .feature-move.up {
     transform: translateY(80px);
   }
 }
+/* @media screen and (max-width: 1200px) {
+  .features-container {
+  }
+  .feature-move.down {
+    transform: translateY(-80px);
+  }
+}
+@media screen and (max-width: 1400px) {
+  .feature-card {
+    width: 352px;
+  }
+}
+@media screen and (min-width: 1200px) {
+ 
+} */

@@ -44,30 +44,31 @@ function LoopPackages() {
           <div
             className={`package-card day-card day-card-move ${scrollDirection}`}
           >
-            <div className="empty-div"> </div>
+            {/* <div className="empty-div"> </div> */}
             <div>
               <div className="card-title">FULL DAY</div>
 
               <div className="card-text">Starts From 9.999 AED / day</div>
             </div>
             <button
-              class="loop-packages-btn btn 
+              className="loop-packages-btn btn 
             pramary-btn text-white dark_bg white-border "
             >
               BOOK NOW
               <img src={arrowIcon} alt="" className="arrow-icon-ms" />
             </button>
           </div>
+
           <div
             className={`package-card week-card week-card-move ${scrollDirection}`}
           >
-            <div className="empty-div"> </div>
+            {/* <div className="empty-div"> </div> */}
             <div>
               <div className="card-title">FULL WEEK</div>
               <div className="card-text">Starts From 9.999 AED / day</div>
             </div>
             <button
-              class="loop-packages-btn btn 
+              className="loop-packages-btn btn 
             pramary-btn text-white green-bg"
             >
               BOOK NOW
@@ -77,14 +78,14 @@ function LoopPackages() {
           <div
             className={`package-card month-card month-card-move ${scrollDirection}`}
           >
-            <div className="empty-div"> </div>
+            {/* <div className="empty-div"> </div> */}
             <div>
               <div className="card-title">FULL MONTH</div>
 
               <div className="card-text">Starts From 9.999 AED / day</div>
             </div>
             <button
-              class="loop-packages-btn btn 
+              className="loop-packages-btn btn 
             pramary-btn text-white dark_bg white-border "
             >
               BOOK NOW

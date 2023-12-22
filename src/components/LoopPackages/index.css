@@ -1,8 +1,8 @@
 .loop-packages {
   background-image: url("../../assets/images/loop-packages.png");
   /* height: 680px; */
-  min-height: 680px;
-  height: 100%;
+  height: 700px;
+  /* height: 100%; */
   width: 100%;
   color: #fff;
   background-size: cover;
@@ -40,9 +40,9 @@
   color: #131825;
 }
 .loop-packages-btn {
-  width: 321px;
+  /* width: 321px; */
   height: 64px;
-
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -61,25 +61,34 @@
   /* padding: 20px; */
   /* place-items: center; */
 }
-.empty-div {
+/* .empty-div {
   height: 60%;
-}
+} */
 .package-card {
   height: 424px;
   /* object-fit: cover; */
-  padding: 0 24px;
-  flex: 0 1 369px;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 24px;
+  /* flex: 0 1 369px; */
+  /* flex: 0 1 calc(100% - 1em); */
+  /* width: 369px; */
+  /* width: 100%; */
+  width: 30%;
+  flex-shrink: 1;
+  /* box-sizing: border-box; */
+  /* border: 1px solid rebeccapurple; */
   background-size: cover;
   transition: transform 1.9998s ease-out;
   background-position: center center;
   background-repeat: no-repeat;
 }
-@media screen and (max-width: 40em) {
+/* @media screen and (max-width: 40em) {
   .package-card {
     flex: 0 1 calc(100% - 1em);
   }
-}
+} */
 
 .month-card {
   background-image: url("../../assets/images/full-month.png");
@@ -98,6 +107,9 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 24px;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: aquamarine; */
 }
 .card-text {
   font-family: Poppins;
@@ -170,9 +182,9 @@
     row-gap: 20px;
     place-items: center;
   } */
-  .empty-div {
+  /* .empty-div {
     height: 40%;
-  }
+  } */
   .loop-card-content {
     /* grid-template-rows: max-content auto; */
   }

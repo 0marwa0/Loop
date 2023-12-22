@@ -48,6 +48,7 @@ function LoopFeatures() {
         </div>
         <img src={test} className="bg-loop-feature" />
         <div
+          style={{ color: "red" }}
           className={` ${scrollDirection} features-container container-layout feature-move`}
         >
           {features.map((feature) => (
@@ -56,7 +57,7 @@ function LoopFeatures() {
               <div className="feature-text">{feature.text}</div>
             </div>
           ))}
-        </div>{" "}
+        </div>
       </div>
     </div>
   );

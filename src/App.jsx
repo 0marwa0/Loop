@@ -48,37 +48,7 @@ function App() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [scrollPosition]);
-  // const splideRef = useRef(null);
 
-  // useEffect(() => {
-  //   const splide = splideRef.current.splide;
-
-  //   const handlePrevClick = () => {
-  //     const currentSlide = splide.index;
-  //     if (currentSlide > 0) {
-  //       splide.go(currentSlide - 1);
-  //     }
-  //   };
-
-  //   const handleNextClick = () => {
-  //     const currentSlide = splide.index;
-  //     if (currentSlide < splide.length - 1) {
-  //       splide.go(currentSlide + 1);
-  //     }
-  //   };
-
-  //   document.getElementById("prev").addEventListener("click", handlePrevClick);
-  //   document.getElementById("next").addEventListener("click", handleNextClick);
-
-  //   return () => {
-  //     document
-  //       .getElementById("prev")
-  //       .removeEventListener("click", handlePrevClick);
-  //     document
-  //       .getElementById("next")
-  //       .removeEventListener("click", handleNextClick);
-  //   };
-  // }, []);
   return (
     <>
       <Booking />

@@ -103,8 +103,8 @@
   margin-top: -135px;
   /* display: grid; */
   z-index: 1;
-  /* width: auto !important; */
-  width: max-content !important;
+  width: auto !important;
+  /* width: max-content !important; */
   height: max-content;
   /* overflow: hidden; */
   box-shadow: 0 24px 52px -14px rgba(29, 41, 57, 0.16);
@@ -195,12 +195,14 @@
 }
 
 .hearo-area {
-  background-image: url("../../assets/images/hearo-area.png");
+  background-image: url("../../assets/images/boat-intro.png");
   /* width: 1440px; */
-  height: 689px;
+  height: 729px;
   color: #fff;
   /* overflow: hidden; */
   background-size: cover;
+  background-color: #131825;
+
   background-position: center;
   background-repeat: no-repeat;
 }
