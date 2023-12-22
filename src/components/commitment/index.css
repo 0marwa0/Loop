@@ -57,7 +57,9 @@
   color: #131825;
 }
 .Yacht-space {
-  width: 800px;
+  width: 10px;
+  height: 50px;
+  padding: 20px;
 }
 .yacht-side-icon {
   width: 614px;
@@ -77,11 +79,11 @@
   }
 
   .image-container.down {
-    transform: translateX(30px);
+    transform: translateX(-30px);
   }
 
   .image-container.up {
-    transform: translateX(-30px);
+    transform: translateX(30px);
   }
 
   .compass.down {
