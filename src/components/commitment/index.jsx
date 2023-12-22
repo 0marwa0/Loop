@@ -54,7 +54,7 @@ function CommitmentSection() {
         </div>
         {/* Yacht */}
         <div className={`image-container yacht-side-icon ${scrollDirection}`}>
-          <div style={{ width: "800px", border: "1px solid teal" }}>empty</div>
+          <div className="Yacht-space"></div>
           <img src={yachtSidIcon} />
         </div>
       </div>

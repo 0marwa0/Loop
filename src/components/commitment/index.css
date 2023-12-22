@@ -56,7 +56,9 @@
   text-align: left;
   color: #131825;
 }
-
+.Yacht-space {
+  width: 800px;
+}
 .yacht-side-icon {
   width: 614px;
   height: 386px;
