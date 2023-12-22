@@ -65,10 +65,6 @@
     padding-top: 10px;
     /* font-size: 22px; */
   }
-
-  /* .book-loop-btn {
-    font-size: 1.2rem !important;
-  } */
 }
 @media screen and (max-width: 800px) {
   .book-loop-text,
@@ -89,5 +85,22 @@
   }
   .book-loop-title-v2 {
     padding-top: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .explore-boats-section-move {
+    transition: transform 1.9998s ease-out;
+  }
+
+  .explore-boats-section-move.down.explore-boat {
+    margin-top: 200px;
+  }
+  .explore-boats-section-move.down {
+    transform: scale(1.3);
+  }
+
+  .explore-boats-section-move.up {
+    transform: scale(1);
   }
 }

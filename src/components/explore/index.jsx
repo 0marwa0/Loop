@@ -2,10 +2,12 @@ import { useState } from "react";
 import "./index.css";
 import arrowIcon from "../../assets/icons/arrow-btn.svg";
 
-function Explore() {
+function Explore(props) {
   return (
-    <>
-      <div class="explore-boat">
+    <div style={{ overflow: "hidden" }}>
+      <div
+        class={`explore-boat explore-boats-section-move  ${props.scrollDirection}`}
+      >
         <div className="container-layout">
           <div class="book-loop-title">
             Explore our exclusive yacht services
@@ -23,7 +25,7 @@ function Explore() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

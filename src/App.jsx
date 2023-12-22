@@ -85,11 +85,11 @@ function App() {
       <CommitmentSection />
       <PrimeLocation />
       <LoopPackages />
-      {/* <LoopFeatures /> */}
+      <LoopFeatures />
       <PrincessYacht />
       <MultiCarousel scrollDirection={scrollDirection} />
       <Testimonials scrollDirection={scrollDirection} />
-      <Explore />
+      <Explore scrollDirection={scrollDirection} />
       <Footer />
     </>
   );
