@@ -61,9 +61,8 @@
   width: 614px;
   height: 386px;
 
-  /* object-fit: contain;
-  transform: rotate(-180deg); */
-  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
 }
 .yacht-side-icon img {
   width: 100%;
@@ -144,6 +143,7 @@
   }
   .yacht-side-icon {
     display: none;
+    background-color: #38983c;
   }
   .compass-container {
     display: none;
