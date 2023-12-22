@@ -38,7 +38,10 @@ function BookingUI() {
             <div class="date-text">Start Date</div>
             <DateInput />
           </section>
-          <section onClick={handleShow}>
+          <section
+
+          //onClick={handleShow}
+          >
             <div class="font-18"> Passengers</div>
             <div class="gray-color text-padding font-18 d-flex justify-content-between font-20">
               10 Passengers
@@ -48,7 +51,7 @@ function BookingUI() {
           <button class=" text-white green-bg book-btn ">
             <div>BOOK NOW</div>
 
-            <img src={arrowIcon} className="arrow-icon-lg book-now-icon" />
+            <img src={arrowIcon} className="arrow-icon-lg" />
           </button>
         </div>
       </div>

@@ -3,3 +3,8 @@
   font-size: 18px !important;
   font-weight: 300;
 }
+.MuiPickersDay-today {
+  background-color: #38983c !important;
+  color: white !important;
+  border: none !important;
+}

@@ -18,7 +18,6 @@ function PassengersModal({ show, handleClose }) {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          0
           <Slider
             aria-label="Temperature"
             defaultValue={30}
