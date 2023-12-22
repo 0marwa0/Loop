@@ -51,7 +51,7 @@ function MultiCarousel(props) {
             <img src={arrowLfet} />
           </button>
           <button id="next" className="slide-button ">
-            <img src={arrowLfet} />
+            <img src={arrowRight} />
           </button>
         </div>
       </div>
