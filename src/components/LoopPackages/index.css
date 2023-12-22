@@ -42,6 +42,7 @@
 .loop-packages-btn {
   width: 321px;
   height: 64px;
+
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -169,12 +170,18 @@
     row-gap: 20px;
     place-items: center;
   } */
+  .empty-div {
+    height: 40%;
+  }
+  .loop-card-content {
+    /* grid-template-rows: max-content auto; */
+  }
   .loop-packages-content {
-    top: 80%;
+    top: 60%;
   }
 
   .loop-packages {
-    height: auto;
+    /* height: 400px; */
     padding-top: 50px;
     margin-bottom: 150px;
   }
@@ -183,7 +190,8 @@
     width: 100%;
     margin-bottom: 20px;
     padding: 0 10px;
-    height: auto;
+    height: 100%;
+    /* margin-bottom: 300px; */
   }
   .loop-packages-title {
     /* font-size: 0.8rem !important; */
@@ -200,9 +208,9 @@
 }
 
 @media screen and (max-width: 700px) {
-  .loop-packages {
+  /* .loop-packages {
     height: 200px;
-  }
+  } */
   /* .card-text {
     font-size: 0.9rem;
   }
