@@ -128,7 +128,9 @@ function BookingUI() {
                 }}
               >
                 <Dropdown.Item className="no-styles">
-                  <div style={{ position: "relative" }}>
+                  <div
+                  // style={{ position: "relative" }}
+                  >
                     <Slider
                       ref={sliderRef}
                       value={value}

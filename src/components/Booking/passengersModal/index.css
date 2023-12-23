@@ -14,14 +14,14 @@
 
 .css-1b1myg3-MuiSlider-thumb {
   border: 4px solid white !important;
-  /* position: relative; */
+  position: relative;
 }
 .lable {
   position: absolute;
   font-family: Poppins !important;
-  top: 40px;
+  top: 50px;
   width: max-content;
-  transform: translateX(-40%);
+  transform: translateX(-60px);
   background-color: #333;
   color: white;
   font-size: 17px;
