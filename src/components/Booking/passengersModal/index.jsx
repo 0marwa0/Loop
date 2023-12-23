@@ -24,8 +24,17 @@ function PassengersModal({ show, handleClose }) {
             style={{ height: "18px" }}
             getAriaValueText={valuetext}
             color="success"
+            componentsProps={{
+              thumb: {
+                style: {
+                  height: 20,
+                  width: 20,
+                  backgroundColor: "blue",
+                  borderRadius: "50%",
+                },
+              },
+            }}
           />
-          {valuetext}
         </Modal.Body>
       </Modal>
     </div>

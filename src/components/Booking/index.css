@@ -173,11 +173,12 @@
   gap: 10px;
   padding: 16px 48px;
 }
-
+.booking-value-padding {
+  padding: 24px 22px 22px 24px;
+}
 .booking-values section {
   color: #131825;
   margin: 1px 0 1px 1px;
-  padding: 24px 22px 22px 24px;
   border: solid 1px #eaeaea;
   border-right: none;
   width: 100%;
