@@ -204,6 +204,22 @@
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   transition: all 0.3s ease;
 }
+.dropdwon-style {
+  color: inherit !important;
+  background-color: transparent !important;
+  border: none !important;
+  padding: 24px 22px 22px 24px !important;
+  width: 100% !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+  text-decoration: none !important;
+}
+.dropdwon-menu {
+  width: 100%;
+  margin-top: 5px;
+  padding-bottom: 50px;
+  border-radius: 0;
+}
 .booking-value-padding {
   padding: 24px 22px 22px 24px;
 }

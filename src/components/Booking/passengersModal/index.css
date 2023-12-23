@@ -29,6 +29,9 @@
   text-align: center;
   background-color: #38983c;
 }
+.font-12 {
+  font-size: 12px;
+}
 .lable::before {
   content: "";
   display: block;

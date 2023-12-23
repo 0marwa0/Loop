@@ -89,41 +89,21 @@ function BookingUI() {
             <div class="date-text">Start Date</div>
             <DateInput />
           </section>
-          <section
-
-          //onClick={handleShow}
-          >
+          <section>
             <Dropdown>
               <Dropdown.Toggle
-                style={{
-                  color: "inherit",
-                  backgroundColor: "transparent",
-                  border: "none",
-                  padding: "24px 22px 22px 24px",
-                  width: "100%",
-                  fontSize: "inherit",
-                  lineHeight: "inherit",
-                  textDecoration: "none",
-                }}
+                className="dropdwon-style"
                 variant="success"
                 id="dropdown-basic"
               >
-                {" "}
                 <div class="font-18"> Passengers</div>
                 <div class="gray-color text-padding font-18 d-flex justify-content-between font-20">
-                  <div className="value-text">10 Passengers</div>
+                  <div className="value-text">{value} Passengers</div>
                   <img src={dropDownIcon} className="drop-down-icon" />
-                </div>{" "}
+                </div>
               </Dropdown.Toggle>
 
-              <Dropdown.Menu
-                style={{
-                  width: "100%",
-                  marginTop: "5px",
-                  paddingBottom: "50px",
-                  borderRadius: "0",
-                }}
-              >
+              <Dropdown.Menu className="dropdwon-menu">
                 <Dropdown.Item className="no-styles">
                   <div
                   // style={{ position: "relative" }}
