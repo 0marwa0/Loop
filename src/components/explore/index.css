@@ -25,16 +25,18 @@
   flex-direction: column;
   text-transform: uppercase;
 }
-.arrow-icon-lg {
+/* .arrow-icon-lg {
   width: 41px;
   height: 36px;
-}
+} */
 .book-loop-btn {
-  width: max-content !important;
-  /* height: 32px !important; */
+  /* width: max-content !important; */
+  width: 273px;
+  height: 64px;
+
   font-family: Poppins;
   display: flex;
-  gap: 3px;
+  gap: 5px;
   flex-direction: row;
   font-size: 16 !important;
   letter-spacing: 0.8px !important;

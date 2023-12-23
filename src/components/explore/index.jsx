@@ -19,7 +19,7 @@ function Explore(props) {
           <div>
             <button class="btn pramary-btn justify-content-center align-items-center text-white book-loop-btn">
               Book loop now
-              <img src={arrowIcon} alt="" className="arrow-icon-lg " />
+              <img src={arrowIcon} alt="" />
             </button>
             <div></div>
           </div>

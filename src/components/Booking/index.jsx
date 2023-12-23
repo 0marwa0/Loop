@@ -15,7 +15,7 @@ function Booking() {
           </div>
           <button class="hearo-btn">
             EXPLORE OUR PACKAGES
-            <img src={arrowIcon} />
+            <img src={arrowIcon} className="arrow-icon-lg" />
           </button>
         </div>
       </div>
