@@ -114,7 +114,7 @@ function BookingUI() {
                 {" "}
                 <div class="font-18"> Passengers</div>
                 <div class="gray-color text-padding font-18 d-flex justify-content-between font-20">
-                  <div>10 Passengers</div>
+                  <div className="value-text">10 Passengers</div>
                   <img src={dropDownIcon} className="drop-down-icon" />
                 </div>{" "}
               </Dropdown.Toggle>

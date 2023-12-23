@@ -68,17 +68,25 @@ function DateInput() {
           onClose={() => setOpen(false)}
           format="DD MMMM YYYY"
           views={["month", "year", "day"]}
+          PopperPlacementType="bottom-start"
           slotProps={{
             textField: {
               InputProps: {
                 size: "large",
                 readOnly: true,
-                color: "#131825",
+
+                color: "#131825 ",
                 onClick: () => {
                   setOpen(true);
                 },
 
-                sx: { fontSize: 20, maxWidth: 200, margin: 0 },
+                sx: {
+                  fontSize: 20,
+                  fontWeight: "300",
+                  maxWidth: 200,
+                  margin: 0,
+                  color: "#131825",
+                },
                 disableUnderline: true,
               },
               variant: "standard",

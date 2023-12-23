@@ -154,6 +154,19 @@
   background-color: #38983c;
   color: #fff;
 }
+.value-text {
+  height: 26px;
+  flex-grow: 1;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  /* line-height: 2.8; */
+  letter-spacing: normal;
+  text-align: left;
+  color: #131825;
+}
 .book-btn {
   /* width: 301px !important; */
   /* height: 112px !important; */
@@ -335,4 +348,15 @@
   .book-btn {
     flex-direction: column;
   }
+}
+.css-1e68d75-MuiInputBase-root-MuiInput-root {
+  color: #131825;
+
+  flex-grow: 1;
+  font-family: Poppins !important;
+  font-size: 20px !important;
+  font-weight: 300;
+
+  letter-spacing: normal !important;
+  text-align: left;
 }
