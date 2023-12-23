@@ -65,11 +65,11 @@ function LoopPackages() {
             {/* <div className="empty-div"> </div> */}
             <div>
               <div className="card-title">FULL WEEK</div>
-              <div className="card-text">Starts From 9.999 AED / day</div>
+              <div className="card-text">Starts From 8,999 AED / week</div>
             </div>
             <button
               className="loop-packages-btn btn 
-            pramary-btn text-white green-bg"
+            pramary-btn text-white dark_bg white-border"
             >
               BOOK NOW
               <img src={arrowIcon} alt="" className="arrow-icon-ms" />
@@ -82,7 +82,7 @@ function LoopPackages() {
             <div>
               <div className="card-title">FULL MONTH</div>
 
-              <div className="card-text">Starts From 9.999 AED / day</div>
+              <div className="card-text">Starts From 7,999 AED / month</div>
             </div>
             <button
               className="loop-packages-btn btn 
