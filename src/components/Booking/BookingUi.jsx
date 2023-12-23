@@ -5,11 +5,8 @@ import dropDownIcon from "../../assets/icons/dropdown-icon.svg";
 import PassengersModal from "./passengersModal";
 import arrowIcon from "../../assets/icons/arrow-btn.svg";
 import Dropdown from "react-bootstrap/Dropdown";
-import DropdownButton from "react-bootstrap/DropdownButton";
+
 import Slider from "@mui/material/Slider";
-import Typography from "@mui/material/Typography";
-import { makeStyles } from "@mui/styles";
-import Tooltip from "@mui/material/Tooltip";
 
 import React from "react";
 const Packages = [
