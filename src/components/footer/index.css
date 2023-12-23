@@ -20,12 +20,17 @@
   text-align: right;
   color: #fff;
 }
-a svg path:hover {
+/* a svg path:hover {
   width: 14px;
   height: 14px;
   fill: rgb(3, 160, 251);
+} */
+.footer-item:hover {
+  color: rgb(3, 160, 251);
 }
-
+.footer-item:hover svg path {
+  fill: rgb(3, 160, 251);
+}
 .footer-layout {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

@@ -13,7 +13,7 @@ function Footer() {
         <div className="container-layout">
           <div className=" footer-layout">
             <div class="footer-icons">
-              <a href="#">
+              <a href="#" className="footer-item">
                 <svg
                   width="14"
                   height="14"
@@ -35,7 +35,7 @@ function Footer() {
                 </svg>{" "}
               </a>
 
-              <a href="#">
+              <a href="#" className="footer-item">
                 <svg
                   width="14"
                   height="14"
@@ -56,7 +56,7 @@ function Footer() {
                   </defs>
                 </svg>
               </a>
-              <a href="#">
+              <a href="#" className="footer-item">
                 <svg
                   width="14"
                   height="14"
@@ -76,7 +76,7 @@ function Footer() {
                   </defs>
                 </svg>{" "}
               </a>
-              <a href="#">
+              <a href="#" className="footer-item">
                 <svg
                   width="14"
                   height="14"
@@ -90,7 +90,7 @@ function Footer() {
                   />
                 </svg>{" "}
               </a>
-              <a href="#">
+              <a href="#" className="footer-item">
                 <svg
                   width="14"
                   height="14"
@@ -109,14 +109,14 @@ function Footer() {
                 </svg>{" "}
               </a>
             </div>
-            <div className="text-center">
+            <div className="text-center footer-item">
               <a href="#">© LOOP 2023</a>
             </div>
-            <div className="terms-porlicy">
-              <div className="text-center">
+            <div className="terms-porlicy ">
+              <div className="text-center footer-item">
                 <a href="#"> Terms Of Use</a>
               </div>
-              <div className="text-center">
+              <div className="text-center footer-item">
                 <a href="#"> Privacy Policy</a>
               </div>
             </div>
