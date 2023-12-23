@@ -197,7 +197,7 @@
   width: 100%;
 }
 .text-padding {
-  padding-bottom: 5px;
+  padding-bottom: 12px;
 }
 .booking-values {
   display: grid;
@@ -349,6 +349,7 @@
     flex-direction: column;
   }
 }
+
 .css-1e68d75-MuiInputBase-root-MuiInput-root {
   color: #131825;
 
