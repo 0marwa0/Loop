@@ -153,6 +153,15 @@
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background-color: #38983c;
   color: #fff;
+  transition: all 0.3s ease;
+}
+.hearo-btn:hover {
+  background-color: #338d34;
+  border-width: 2px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .value-text {
   height: 26px;
@@ -186,6 +195,15 @@
   gap: 10px;
   padding: 16px 48px;
 }
+.book-btn:hover {
+  background-color: #338d34;
+  border-width: 2px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: all 0.3s ease;
+}
 .booking-value-padding {
   padding: 24px 22px 22px 24px;
 }
@@ -199,6 +217,7 @@
 .text-padding {
   padding-bottom: 12px;
 }
+
 .booking-values {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

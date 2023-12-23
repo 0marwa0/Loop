@@ -47,6 +47,14 @@
   padding: 19px !important;
   border: 1px solid white !important;
 }
+.book-loop-btn:hover {
+  border-width: 2px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: all 0.3s ease;
+}
 .explore-boat {
   margin-top: 98px;
   background-image: url("../../assets/images/boat-1.png");
