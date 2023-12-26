@@ -102,7 +102,7 @@
 .hearo-booking {
   margin-top: -135px;
   /* display: grid; */
-  z-index: 1;
+  /* z-index: 1; */
   width: auto !important;
   /* width: max-content !important; */
   height: max-content;
