@@ -15,6 +15,9 @@
   text-align: left;
   color: #fff;
 }
+.location-content {
+  gap: 70px;
+}
 .location-section {
   background-image: url("../../assets/images/loopLocation.png");
   width: 100%;
@@ -48,7 +51,14 @@
   height: 27px;
   cursor: pointer;
 }
-
+.section-text {
+  font-family: Poppins;
+  font-size: 32px;
+  line-height: 1.44;
+  letter-spacing: 1.6px;
+  text-align: left;
+  color: #fff;
+}
 @media screen and (max-width: 300px) {
   .location-section {
     height: 100% !important;
@@ -71,7 +81,7 @@
   }
 
   .primeLocation-move.up {
-    transform: translateY(80px);
+    transform: translateY(120px);
   }
 }
 @media screen and (max-width: 800px) {

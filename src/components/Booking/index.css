@@ -99,6 +99,10 @@
 /* .css-z3c6am-MuiFormControl-root-MuiTextField-root {
   width: 97%;
 } */
+
+.font-wight-500 {
+  font-weight: 500;
+}
 .hearo-booking {
   margin-top: -135px;
   /* display: grid; */
@@ -308,11 +312,6 @@
     grid-column: 1/1;
 
     width: 100% !important;
-  }
-  .booking-values {
-    /* grid-template-columns: repeat(4, auto); */
-
-    place-items: center;
   }
 }
 

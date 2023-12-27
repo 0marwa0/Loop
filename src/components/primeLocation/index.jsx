@@ -29,7 +29,7 @@ function PrimeLocation() {
     <div className="location-section">
       <div className="container-layout">
         <section
-          className={`primeLocation-move d-flex gap-4 location-content ${scrollDirection}`}
+          className={`primeLocation-move d-flex  location-content ${scrollDirection}`}
         >
           <div className="play-icon-container">
             <img src={playIcon} className="play-icon" />
@@ -40,8 +40,9 @@ function PrimeLocation() {
               className="section-text 
           white-color"
             >
-              <strong>Dubai</strong> And<strong> Abu Dhabi</strong> offer some
-              of the world's most iconic and breathtaking maritime landscapes.
+              <span className="font-wight-500"> Dubai</span> And
+              <span className="font-wight-500"> Abu Dhabi</span> offer some of
+              the world's most iconic and breathtaking maritime landscapes.
             </div>
           </div>
         </section>

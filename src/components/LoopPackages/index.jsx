@@ -34,7 +34,9 @@ function LoopPackages() {
             <div className="loop-packages-title">loop packages</div>
             <div className="loop-packages-text">
               Embark on a luxurious maritime escape with LOOP's curated yacht
-              packages in Dubai and Abu Dhabi.
+              <span className="font-wight-500"> packages</span> in{" "}
+              <span className="font-wight-500"> Dubai</span> and{" "}
+              <span className="font-wight-500"> Abu Dhabi.</span>
             </div>
           </div>
         </div>

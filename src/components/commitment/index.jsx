@@ -42,13 +42,14 @@ function CommitmentSection() {
           />
         </div>
         {/* text */}
-        <div className="commitment-container ">
+        <div className="commitment-container">
           <img src={shipIcon} className="ship-icon" />
           <div>
             <div className="commitment-title">OUR COMMITMENT</div>
             <div>
               Our commitment is to provide you with a
-              <strong> yacht experience</strong> that transcends the ordinary.
+              <span className="font-wight-500"> yacht experience</span> that
+              transcends the ordinary.
             </div>
           </div>
         </div>
