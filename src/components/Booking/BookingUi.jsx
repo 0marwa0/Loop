@@ -105,14 +105,11 @@ function BookingUI() {
 
               <Dropdown.Menu className="dropdwon-menu">
                 <Dropdown.Item className="no-styles">
-                  <div
-                  // style={{ position: "relative" }}
-                  >
+                  <div>
                     <Slider
                       ref={sliderRef}
                       value={value}
                       onChange={handleChange}
-                      // valueLabelDisplay="auto"
                       valueLabelFormat={(value) => `${value}%`}
                       min={0}
                       style={{ height: "12px" }}
